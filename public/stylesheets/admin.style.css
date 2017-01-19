@@ -200,11 +200,19 @@ div {
     border: 7px solid #1AAD19;
 }
 
+.page_ev_cts ul li h3 {
+    color: #fff;
+    text-align: center;
+}
+
 .page_ev_cts ul li.action_music {
     border: 3px solid #dd0;
+    background-color: #440;
+/*
     background-image: url('/images/music.png');
     background-repeat: no-repeat;
     background-size: cover;
+*/
 }
 
 .page_ev_cts ul li.action_movie {

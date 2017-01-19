@@ -273,11 +273,12 @@ router.post('/newqr', function(req, res, next) {
 router.all('/checkin/:openid?', function(req, res, next) {
   var openid = req.params.openid;
   var prizes = [
-    '特等奖',
+    '无',
     '一等奖',
     '二等奖',
     '三等奖',
-    '幸运奖'
+    '幸运奖',
+    '特等奖'
   ];
 
 

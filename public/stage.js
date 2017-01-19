@@ -297,6 +297,7 @@ var appendWinner = function(ri) {
 
   $.post("/admin/action/win", payload, function(data) {
     window.LOT.winners.push(ri);
+    window.LOT.allWinners.push(ri);
     $('#winners ul').append('<li><img src="' + aud.avatar + '"><h3>' + aud.nick + '</h3>');
   });
 };
@@ -312,7 +313,7 @@ var roll = function() {
     window.LOT.ri = 0;
   }
 
-  while(window.LOT.winners.includes(window.LOT.ri)) {
+  while(window.LOT.allWinners.includes(window.LOT.ri)) {
     window.LOT.ri += 1;
   }
 
@@ -362,6 +363,7 @@ var loadLottery = function(e) {
   window.LOT.speed = 20;
   window.LOT.avatars = [];
   window.LOT.winners = [];
+  window.LOT.allWinners = [];
 
   var list = [];
   for (var i in e.audiences) {
@@ -375,10 +377,12 @@ var loadLottery = function(e) {
   function() {
     for (var i in e.audiences) {
       if (e.audiences[i].lotid) {
-        appendWinnerLocal(parseInt(i));
+        if (e.audiences[i].lotid == window.LOT.lotid) {
+          appendWinnerLocal(parseInt(i));
+        }
+        window.LOT.allWinners.push(parseInt(i));
       }
     }
-    //setTimeout(roll, window.LOT.speed);
   });
 };
 

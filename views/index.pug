@@ -44,17 +44,19 @@ block content
             div(class="page_ev_cts page_thumb_cts")
               ul
                 each img in p.images
-                  li(class="action_image" data-url=img)
-                    img(src=img)
+                  li(class="action_image" data-url=img.url)
+                    img(src=img.url)
          
           if p.musics
             div(class="page_ev_cts page_thumb_cts")
               ul
                 each m in p.musics
-                  li(class="action_music" data-url=m)
+                  li(class="action_music" data-url=m.url)
+                    h3=m.title
          
           if p.movies
             div(class="page_ev_cts page_thumb_cts")
               ul
                 each m in p.movies
-                  li(class="action_movie" data-url=m)
+                  li(class="action_movie" data-url=m.url)
+                    h3=m.title

@@ -1,70 +1,660 @@
 [
   {
     "id": "01",
-    "type": "综艺",
+    "type": "综合",
     "title": "暖场",
     "actors": "HiShop",
     "images": [
-        "programs/01/bg.jpg"
+        {
+            "title": "主题背景",
+            "url": "http://localhost/01/bg.jpg"
+        }
     ],
     "musics": [
-        "programs/01/caishen.mp3",
-        "programs/01/chunjiexuqu.mp3",
-        "programs/01/gxfc.mp3"
+        {
+            "title": "财神来到我家门",
+            "url": "http://localhost/01/01.mp3"
+        },
+        {
+            "title": "春节序曲",
+            "url": "http://localhost/01/02.mp3"
+        },
+        {
+            "title": "恭喜发财",
+            "url": "http://localhost/01/03.mp3"
+        },
+        {
+            "title": "恭喜发财歌",
+            "url": "http://localhost/01/04.mp3"
+        },
+        {
+            "title": "喜气洋洋",
+            "url": "http://localhost/01/05.mp3"
+        },
+        {
+            "title": "迎春花",
+            "url": "http://localhost/01/06.mp3"
+        },
+        {
+            "title": "祝福你",
+            "url": "http://localhost/01/07.mp3"
+        },
+        {
+            "title": "新年快乐 - 忧欢派对,小虎队",
+            "url": "http://localhost/01/08.mp3"
+        },
+        {
+            "title": "新年快乐 - 中国娃娃",
+            "url": "http://localhost/01/09.mp3"
+        }
     ]
   },
   {
     "id": "02",
-    "type": "开场",
-    "title": "年会开场",
+    "type": "综合",
+    "title": "年会开场创意配音短片",
     "actors": "HiShop",
     "movies": [
-        "programs/02/bg.mp4"
+        {
+            "title": "主题视频",
+            "url": "http://localhost/02/bg.mp4"
+        }
     ]
   },
   {
     "id": "03",
-    "type": "语言类",
-    "title": "让我开心一下",
-    "actors": "研发/程序员甲，产品经理乙",
+    "type": "演讲",
+    "title": "BOSS主题演讲",
+    "actors": "HiShop",
     "images": [
-        "programs/03/bg.jpg"
+        {
+            "title": "红灯片",
+            "url": "http://localhost/03/01.jpg"
+        },
+        {
+            "title": "红灯片",
+            "url": "http://localhost/03/02.jpg"
+        },
+        {
+            "title": "红灯片",
+            "url": "http://localhost/03/03.jpg"
+        },
+        {
+            "title": "红灯片",
+            "url": "http://localhost/03/04.jpg"
+        },
+        {
+            "title": "红灯片",
+            "url": "http://localhost/03/05.jpg"
+        },
+        {
+            "title": "红灯片",
+            "url": "http://localhost/03/06.jpg"
+        },
+        {
+            "title": "红灯片",
+            "url": "http://localhost/03/07.jpg"
+        },
+        {
+            "title": "红灯片",
+            "url": "http://localhost/03/08.jpg"
+        },
+        {
+            "title": "红灯片",
+            "url": "http://localhost/03/09.jpg"
+        },
+        {
+            "title": "红灯片",
+            "url": "http://localhost/03/10.jpg"
+        }
     ]
   },
   {
     "id": "04",
-    "type": "歌舞类",
-    "title": "开心舞起来",
-    "actors": "大队部",
+    "type": "综合",
+    "title": "海商大事记视频",
+    "actors": "HiShop",
     "movies": [
-        "programs/04/bg.mp4"
+        {
+            "title": "主题视频",
+            "url": "http://localhost/04/bg.mp4"
+        }
     ]
   },
   {
     "id": "05",
-    "type": "演讲",
-    "title": "BOSS主题演讲",
-    "actors": "BOSS",
+    "type": "综合",
+    "title": "优秀员工与部门负责人颁奖",
+    "actors": "HiShop",
     "images": [
-        "programs/05/01.jpg",
-        "programs/05/02.jpg",
-        "programs/05/03.jpg",
-        "programs/05/04.jpg",
-        "programs/05/05.jpg",
-        "programs/05/06.jpg",
-        "programs/05/07.jpg",
-        "programs/05/08.jpg",
-        "programs/05/09.jpg",
-        "programs/05/10.jpg"
+        {
+            "title": "年度优秀员工",
+            "url": "http://localhost/05/01.jpg"
+        },
+        {
+            "title": "年度优秀负责人1",
+            "url": "http://localhost/05/02.jpg"
+        },
+        {
+            "title": "年度优秀负责人2",
+            "url": "http://localhost/05/03.jpg"
+        }
+    ],
+    "musics": [
+        {
+            "title": "出场音乐",
+            "url": "http://localhost/05/01.mp3"
+        },
+        {
+            "title": "颁奖过程中音乐",
+            "url": "http://localhost/05/01.mp3"
+        }
     ]
   },
   {
     "id": "06",
+    "type": "舞蹈",
+    "title": "八戒八戒",
+    "actors": "HiShop",
+    "images": [
+        {
+            "title": "主题背景",
+            "url": "http://localhost/06/bg.jpg"
+        }
+    ],
+    "musics": [
+        {
+            "title": "八戒八戒主题音乐",
+            "url": "http://localhost/06/bg.mp3"
+        }
+    ]
+  },
+  {
+    "id": "07",
+    "type": "综艺",
+    "title": "舞台秀蜜汁天鹅",
+    "actors": "营销部",
+    "images": [
+        {
+            "title": "动画背景GIF图",
+            "url": "http://localhost/07/bg.gif"
+        }
+    ],
+    "musics": [
+        {
+            "title": "魔鬼舞确认",
+            "url": "http://localhost/07/01.mp3"
+        },
+        {
+            "title": "小鸡",
+            "url": "http://localhost/07/02.mp3"
+        },
+        {
+            "title": "The Knife-Got 2 Let U",
+            "url": "http://localhost/07/03.mp3"
+        }
+    ]
+  },
+  {
+    "id": "08",
+    "type": "小品",
+    "title": "测谎仪",
+    "actors": "移动云商城",
+    "images": [
+        {
+            "title": "主题背景",
+            "url": "http://localhost/08/bg.jpg"
+        }
+    ],
+    "musics": [
+        {
+            "title": "嘀嘀嘀报警声效",
+            "url": "http://localhost/08/bg.mp3"
+        }
+    ]
+  },
+  {
+    "id": "09",
     "type": "抽奖活动",
-    "title": "三等奖 - Dohia 羽丝绒被（5名）",
+    "title": "第一轮抽奖5个幸运奖",
+    "actors": "主持人",
+    "scene": 2017,
+    "lottery": 4,
+    "count": 30
+  },
+  {
+    "id": "10",
+    "type": "游戏",
+    "title": "第一轮游戏你来作怪我来喷",
+    "actors": "",
+    "images": [
+        {
+            "title": "主题背景",
+            "url": "http://localhost/10/bg.jpg"
+        }
+    ]
+  },
+  {
+    "id": "11",
+    "type": "综合",
+    "title": "舞蹈+合唱bar bar bar",
+    "actors": "",
+    "movies": [
+        {
+            "title": "音乐编辑 + 让爱传出去",
+            "url": "http://localhost/11/01.mp4"
+        },
+        {
+            "title": "bar bar bar",
+            "url": "http://localhost/11/02.mp4"
+        }
+    ]
+  },
+  {
+    "id": "12",
+    "type": "综合",
+    "title": "老兵cosplay",
+    "actors": "",
+    "movies": [
+        {
+            "title": "主题视频",
+            "url": "http://localhost/12/bg.mp4"
+        }
+    ]
+  },
+  {
+    "id": "13",
+    "type": "小品",
+    "title": "全民互联网",
+    "actors": "分销事业部",
+    "images": [
+        {
+            "title": "主题背景",
+            "url": "http://localhost/13/bg.jpg"
+        }
+    ],
+    "musics": [
+        {
+            "title": "老司机带带我",
+            "url": "http://localhost/13/01.mp3"
+        },
+        {
+            "title": "难忘今宵",
+            "url": "http://localhost/13/02.mp3"
+        }
+    ]
+  },
+  {
+    "id": "14",
+    "type": "小品",
+    "title": "歌曲串烧改霸歌",
+    "actors": "移动云商城",
+    "images": [
+        {
+            "title": "主题背景",
+            "url": "http://localhost/14/bg.jpg"
+        }
+    ],
+    "movies": [
+        {
+            "title": "老司机带带我",
+            "url": "http://localhost/14/bg.mp4"
+        }
+    ]
+  },
+  {
+    "id": "15",
+    "type": "抽奖活动",
+    "title": "第二轮抽奖5个幸运奖",
+    "actors": "主持人",
+    "scene": 2017,
+    "lottery": 4,
+    "count": 30
+  },
+  {
+    "id": "16",
+    "type": "游戏",
+    "title": "第二轮游戏全民猜猜猜",
+    "actors": "",
+    "images": [
+        {
+            "title": "主题背景",
+            "url": "http://localhost/16/bg.jpg"
+        }
+    ]
+  },
+  {
+    "id": "17",
+    "type": "小品",
+    "title": "小品大话西游",
+    "actors": "",
+    "images": [
+        {
+            "title": "打雷1",
+            "url": "http://localhost/17/01.jpg"
+        },
+        {
+            "title": "打雷2",
+            "url": "http://localhost/17/02.jpg"
+        }
+    ],
+    "movies": [
+        {
+            "title": "爱剪辑-那些一起走过的日子",
+            "url": "http://localhost/17/01.mp4"
+        },
+        {
+            "title": "一生所爱",
+            "url": "http://localhost/17/02.mp4"
+        }
+    ],
+    "musics": [
+        {
+            "title": "打雷声1",
+            "url": "http://localhost/17/01.mp3"
+        },
+        {
+            "title": "打雷声2",
+            "url": "http://localhost/17/02.mp3"
+        },
+        {
+            "title": "恋人 - 我的记忆 - 钢琴版纯音乐",
+            "url": "http://localhost/17/03.mp3"
+        },
+        {
+            "title": "子非鱼同学 - 芦苇荡 - 萧版纯音乐",
+            "url": "http://localhost/17/03.mp3"
+        }
+    ]
+  },
+  {
+    "id": "18",
+    "type": "综合",
+    "title": "舞蹈趣味体操",
+    "actors": "",
+    "movies": [
+        {
+            "title": "卸膊操",
+            "url": "http://localhost/18/bg.mp4"
+        }
+    ]
+  },
+  {
+    "id": "19",
+    "type": "综合",
+    "title": "歌曲合唱灌篮高手主题曲",
+    "actors": "",
+    "movies": [
+        {
+            "title": "直到世界尽头",
+            "url": "http://localhost/19/bg.mp4"
+        }
+    ]
+  },
+  {
+    "id": "20",
+    "type": "小品",
+    "title": "小品机场培训师",
+    "actors": "",
+    "images": [
+        {
+            "title": "机场培训师1",
+            "url": "http://localhost/20/01.jpg"
+        },
+        {
+            "title": "机场培训师2",
+            "url": "http://localhost/20/02.jpg"
+        }
+    ],
+    "musics": [
+        {
+            "title": "惨叫声音",
+            "url": "http://localhost/20/01.mp3"
+        },
+        {
+            "title": "飞机起飞音效",
+            "url": "http://localhost/20/02.wav"
+        },
+        {
+            "title": "僵尸确认",
+            "url": "http://localhost/20/03.mp3"
+        },
+        {
+            "title": "蟒蛇确认",
+            "url": "http://localhost/20/04.mp3"
+        }
+    ]
+  },
+  {
+    "id": "21",
+    "type": "抽奖活动",
+    "title": "第三轮抽奖4个三等奖",
     "actors": "主持人",
     "scene": 2017,
     "lottery": 3,
-    "count": 20
+    "count": 30
+  },
+  {
+    "id": "22",
+    "type": "游戏",
+    "title": "第三轮游戏最佳狼队友",
+    "actors": "",
+    "images": [
+        {
+            "title": "主题背景",
+            "url": "http://localhost/22/bg.jpg"
+        }
+    ]
+  },
+  {
+    "id": "23",
+    "type": "舞蹈",
+    "title": "你干嘛",
+    "actors": "大队部",
+    "images": [
+        {
+            "title": "主题背景",
+            "url": "http://localhost/23/bg.jpg"
+        }
+    ],
+    "musics": [
+        {
+            "title": "你干嘛",
+            "url": "http://localhost/23/bg.mp3"
+        }
+    ]
+  },
+  {
+    "id": "24",
+    "type": "小品",
+    "title": "忆童年",
+    "actors": "",
+    "images": [
+        {
+            "title": "主题背景",
+            "url": "http://localhost/24/bg.jpg"
+        }
+    ],
+    "musics": [
+        {
+            "title": "同桌的你(伴奏版)",
+            "url": "http://localhost/24/bg.mp3"
+        }
+    ]
+  },
+  {
+    "id": "25",
+    "type": "演奏",
+    "title": "独奏《卡农》",
+    "actors": "",
+    "images": [
+        {
+            "title": "主题背景",
+            "url": "http://localhost/25/bg.jpg"
+        }
+    ]
+  },
+  {
+    "id": "26",
+    "type": "舞蹈",
+    "title": "蓝色下水道的传说",
+    "actors": "",
+    "images": [
+        {
+            "title": "主题背景",
+            "url": "http://localhost/26/bg.jpg"
+        }
+    ],
+    "musics": [
+        {
+            "title": "音乐1-PPAP",
+            "url": "http://localhost/26/01.mp3"
+        },
+        {
+            "title": "音乐2-咋了爸爸",
+            "url": "http://localhost/26/02.mp3"
+        }
+    ],
+    "movies": [
+        {
+            "title": "蓝色下水道的传说1",
+            "url": "http://localhost/26/01.mp4"
+        },
+        {
+            "title": "蓝色下水道的传说2",
+            "url": "http://localhost/26/02.mp4"
+        }
+    ]
+  },
+  {
+    "id": "27",
+    "type": "其他",
+    "title": "主持人结束语",
+    "actors": "",
+    "images": [
+        {
+            "title": "年会主背景板",
+            "url": "http://localhost/27/bg.jpg"
+        }
+    ]
+  },
+  {
+    "id": "28.1",
+    "type": "抽奖活动",
+    "title": "第四轮抽奖 - 2个二等奖",
+    "actors": "主持人",
+    "scene": 2017,
+    "lottery": 2,
+    "count": 30
+  },
+  {
+    "id": "28.2",
+    "type": "抽奖活动",
+    "title": "第四轮抽奖 - 1个一等奖",
+    "actors": "主持人",
+    "scene": 2017,
+    "lottery": 1,
+    "count": 30
+  },
+  {
+    "id": "28.3",
+    "type": "抽奖活动",
+    "title": "第四轮抽奖 - 1个特等奖",
+    "actors": "主持人",
+    "scene": 2017,
+    "lottery": 5,
+    "count": 30
+  },
+  {
+    "id": "29",
+    "type": "其他",
+    "title": "寿星生日庆祝仪式",
+    "actors": "",
+    "images": [
+        {
+            "title": "年会生日",
+            "url": "http://localhost/29/bg.jpg"
+        }
+    ],
+    "musics": [
+        {
+            "title": "群星 - 生日歌",
+            "url": "http://localhost/29/01.mp3"
+        },
+        {
+            "title": "猪你生日快乐",
+            "url": "http://localhost/29/02.mp3"
+        },
+        {
+            "title": "SNH48 - 生日快乐",
+            "url": "http://localhost/29/03.mp3"
+        }
+    ]
+  },
+  {
+    "id": "30",
+    "type": "其他",
+    "title": "节目评奖领奖",
+    "actors": "",
+    "musics": [
+        {
+            "title": "上场领奖",
+            "url": "http://localhost/30/01.mp3"
+        },
+        {
+            "title": "颁奖过程中",
+            "url": "http://localhost/30/02.mp3"
+        }
+    ]
+  },
+  {
+    "id": "31",
+    "type": "综合",
+    "title": "晚宴进行时",
+    "actors": "HiShop",
+    "images": [
+        {
+            "title": "主题背景",
+            "url": "http://localhost/31/bg.jpg"
+        }
+    ],
+    "musics": [
+        {
+            "title": "财神来到我家门",
+            "url": "http://localhost/31/01.mp3"
+        },
+        {
+            "title": "春节序曲",
+            "url": "http://localhost/31/02.mp3"
+        },
+        {
+            "title": "恭喜发财",
+            "url": "http://localhost/31/03.mp3"
+        },
+        {
+            "title": "恭喜发财歌",
+            "url": "http://localhost/31/04.mp3"
+        },
+        {
+            "title": "喜气洋洋",
+            "url": "http://localhost/31/05.mp3"
+        },
+        {
+            "title": "迎春花",
+            "url": "http://localhost/31/06.mp3"
+        },
+        {
+            "title": "祝福你",
+            "url": "http://localhost/31/07.mp3"
+        },
+        {
+            "title": "新年快乐 - 忧欢派对,小虎队",
+            "url": "http://localhost/31/08.mp3"
+        },
+        {
+            "title": "新年快乐 - 中国娃娃",
+            "url": "http://localhost/31/09.mp3"
+        }
+    ]
   }
 ]
