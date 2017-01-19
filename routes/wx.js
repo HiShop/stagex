@@ -135,7 +135,7 @@ var onScan = function(wxmp, from, to, scene, ticket, callback) {
       return callback(null, msg);
     };
 
-    var title = '恭喜您受邀参加HiShop.2017年会';
+    var title = '恭喜您受邀参加HiShop.2017年度盛典';
     var desc = '点击办理登机手续，参与年会互动及幸运抽大奖活动！';
     var pic = 'http://m2017.hishop.com.cn/images/wx-welcome.jpg?v=1.2';
     var url = 'http://m2017.hishop.com.cn/wx/checkin/' + from;
