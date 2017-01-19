@@ -1,4 +1,3 @@
-var bcrypt = require('bcrypt');
 var crypto = require('crypto');
 var moment = require('moment');
 var xml2js = require('xml2js');
@@ -167,14 +166,6 @@ exports.formatDate = function (date, friendly) {
 
 exports.validateId = function (str) {
   return (/^[a-zA-Z0-9\-_]+$/i).test(str);
-};
-
-exports.bhash = function (str, callback) {
-  bcrypt.hash(str, 10, callback);
-};
-
-exports.bcompare = function (str, hash, callback) {
-  bcrypt.compare(str, hash, callback);
 };
 
 var hmac = function(data, algrithm) {
