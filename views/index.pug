@@ -1,0 +1,60 @@
+extends layout
+block head_others
+  meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+  link(rel='stylesheet', href='/stylesheets/admin.style.css')
+  script(src='/jquery-3.1.1.min.js')
+  script(src='/dashboard.js')
+
+block content
+  section(id="header" class="layout-wrap")
+    div(id="logo")
+      a(href="/")
+        img(src="/images/logo.png")
+        h1 HiShop.云舞台
+
+  div(class="control_bar")
+    ul
+      li
+        a(id="btn_pause") 暂停
+      li
+        a(id="btn_play") 播放
+      li
+        a(id="btn_stop") 停止
+
+  section(id="content" class="layout-wrap content")
+    each p in programs
+      div(class="page_ev")
+        div(class="page_ev_hd")
+          div(class="page_ev_category")
+            h3=p.type
+        
+        div(class="page_ev_bd")
+          div(class="page_ev_title")
+            h3="[" + p.id + "] " + p.title
+          
+          div(class="page_ev_desc")
+            p=p.actors
+          
+          if p.lottery
+            div(class="page_ev_cts")
+              button(class="action_button" data-fn="mc" data-title=p.title data-count=p.count data-scene=p.scene data-lotid=p.lottery) 点击启动
+              button(class="action_button" data-fn="roll" data-title=p.title data-count=p.count data-scene=p.scene data-lotid=p.lottery) 点击滚动
+         
+          if p.images
+            div(class="page_ev_cts page_thumb_cts")
+              ul
+                each img in p.images
+                  li(class="action_image" data-url=img)
+                    img(src=img)
+         
+          if p.musics
+            div(class="page_ev_cts page_thumb_cts")
+              ul
+                each m in p.musics
+                  li(class="action_music" data-url=m)
+         
+          if p.movies
+            div(class="page_ev_cts page_thumb_cts")
+              ul
+                each m in p.movies
+                  li(class="action_movie" data-url=m)

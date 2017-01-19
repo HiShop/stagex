@@ -1,0 +1,70 @@
+[
+  {
+    "id": "01",
+    "type": "综艺",
+    "title": "暖场",
+    "actors": "HiShop",
+    "images": [
+        "programs/01/bg.jpg"
+    ],
+    "musics": [
+        "programs/01/caishen.mp3",
+        "programs/01/chunjiexuqu.mp3",
+        "programs/01/gxfc.mp3"
+    ]
+  },
+  {
+    "id": "02",
+    "type": "开场",
+    "title": "年会开场",
+    "actors": "HiShop",
+    "movies": [
+        "programs/02/bg.mp4"
+    ]
+  },
+  {
+    "id": "03",
+    "type": "语言类",
+    "title": "让我开心一下",
+    "actors": "研发/程序员甲，产品经理乙",
+    "images": [
+        "programs/03/bg.jpg"
+    ]
+  },
+  {
+    "id": "04",
+    "type": "歌舞类",
+    "title": "开心舞起来",
+    "actors": "大队部",
+    "movies": [
+        "programs/04/bg.mp4"
+    ]
+  },
+  {
+    "id": "05",
+    "type": "演讲",
+    "title": "BOSS主题演讲",
+    "actors": "BOSS",
+    "images": [
+        "programs/05/01.jpg",
+        "programs/05/02.jpg",
+        "programs/05/03.jpg",
+        "programs/05/04.jpg",
+        "programs/05/05.jpg",
+        "programs/05/06.jpg",
+        "programs/05/07.jpg",
+        "programs/05/08.jpg",
+        "programs/05/09.jpg",
+        "programs/05/10.jpg"
+    ]
+  },
+  {
+    "id": "06",
+    "type": "抽奖活动",
+    "title": "三等奖 - Dohia 羽丝绒被（5名）",
+    "actors": "主持人",
+    "scene": 2017,
+    "lottery": 3,
+    "count": 20
+  }
+]

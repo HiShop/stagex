@@ -1,0 +1,132 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+div {
+}
+
+#wrapper {
+    width: 1350px;
+    height: 810px;
+    padding: 0px;
+}
+
+#curtain {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+#vplayer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+#aplayer {
+    display: none;
+}
+
+#image {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+#layer_lot {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/themebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#lot_title {
+    position: absolute;
+    left: 0;
+    top: 300px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+#roll {
+    position: absolute;
+    left: 300px;
+    top: 335px;
+    width: 200px;
+}
+
+#roll img {
+    border-radius: 50%;
+    border: 3px solid #fa4;
+    width: 160px;
+    height: 160px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: auto;
+    display: block;
+}
+
+#roll p {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 0;
+    font-size: 1.5em;
+}
+
+#winners {
+    position: absolute;
+    left: 500px;
+    top: 380px;
+    width: 600px;
+    /*background-color: #ddd;*/
+}
+
+#winners ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+}
+
+#winners ul li {
+    /*
+    margin-right: 10px;
+    margin-bottom: 10px;
+    */
+    float: left;
+    padding: 0;
+    cursor: pointer;
+    /*background-color: #888;*/
+    width: 120px;
+}
+
+#winners ul li img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fa4;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: auto;
+    display: block;
+}
+
+#winners ul li h3 {
+    width: 100%;
+    font-size: 0.75em;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+}

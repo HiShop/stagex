@@ -1,0 +1,33 @@
+extends layout
+block head_others
+  meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+  link(rel='stylesheet', href='/stylesheets/admin.style.css')
+  script(src='/jquery-3.1.1.min.js')
+  script(src='/dashboard.js')
+
+block content
+  section(id="header" class="layout-wrap")
+    div(id="logo")
+      a(href="#")
+        img(src="/images/logo.png")
+        h1 HiShop.2017年会入场券
+
+  section(id="content" class="layout-wrap content")
+    div(class="page_ev")
+      div(class="page_ev_hd")
+        div(class="page_ev_category")
+          h3 发放批次 - #{lot}
+      
+      div(class="page_ev_bd")
+        div(class="page_ev_cts page_qr_cts")
+          ul
+            each qr, n in qrs
+              li(class="qr_image" data-url=img)
+                if qr.openid
+                  img(class="qr_used" src='https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=' + encodeURIComponent(qr.ticket))
+                  p [#{lot}/#{n+1}]
+                    | <br>此二维码已经被使用！
+                else 
+                  img(src='https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=' + encodeURIComponent(qr.ticket))
+                  p [#{lot}/#{n+1}]
+                    | <br>凭此二维码参与现场抽奖等活动，可长按扫描，扫完即刻失效！

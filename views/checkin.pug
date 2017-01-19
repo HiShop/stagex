@@ -1,0 +1,26 @@
+extends layout
+block head_others
+  meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+  link(rel='stylesheet', href='/stylesheets/mobile.style.css')
+  script(src='/jquery-3.1.1.min.js')
+
+block content
+  div(class="mwrap")
+    div(class="mbg-top")
+      div(class="title1")
+        if aud.name
+          h3= aud.name
+        else
+          h3
+      div(id="sureform" class="section-wrapper")
+        if aud.lotid
+          h3(id="mtips")= "真没骗您，恭喜少侠您中了" + prizes[aud.lotid]
+        else if aud.name
+          h3(id="mtips") 少侠！快迎接您的人生巅峰吧
+        else
+          div(class="mform")
+            form(action="/wx/checkin/" + openid, method="POST")
+              input(id="surename" name="surename" size="8" required="required" placeholder="还请少侠留下大名")
+              button(id="submit") 确定
+  div(class="mbottomwrap")
+    div(class="mbg-bottom")
