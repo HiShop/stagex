@@ -31,6 +31,7 @@ router.post('/action/startlot', function(req, res, next) {
   var lotid = parseInt(req.body.lotid);
   var query = {
     scenes: scene,
+    name: {$exists: true}
 //    lotid: { $exists: false }
   };
 

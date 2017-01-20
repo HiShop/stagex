@@ -283,7 +283,7 @@ var loadMusic = function(url) {
 var appendWinnerLocal = function(ri) {
   var aud = window.LOT.audiences[ri];
   window.LOT.winners.push(ri);
-  $('#winners ul').append('<li><img src="' + aud.avatar + '"><h3>' + aud.nick + '</h3>');
+  $('#winners ul').append('<li><img src="' + aud.avatar + '"><h3>' + aud.name+ '</h3>');
 };
 
 var appendWinner = function(ri) {
@@ -298,14 +298,19 @@ var appendWinner = function(ri) {
   $.post("/admin/action/win", payload, function(data) {
     window.LOT.winners.push(ri);
     window.LOT.allWinners.push(ri);
-    $('#winners ul').append('<li><img src="' + aud.avatar + '"><h3>' + aud.nick + '</h3>');
+    $('#winners ul').append('<li><img src="' + aud.avatar + '"><h3>' + aud.name+ '</h3>');
   });
 };
 
 var roll = function() {
   if (window.LOT.frozen) {
-    appendWinner(window.LOT.ri);
-    return;
+    if (window.LOT.ticks == 0) {
+      appendWinner(window.LOT.ri);
+      return;
+    }
+
+    window.LOT.ticks -= 1;
+    window.LOT.speed += 20;
   }
 
   window.LOT.ri += 1;
@@ -324,7 +329,7 @@ var roll = function() {
 
   var aud = window.LOT.audiences[window.LOT.ri];
   $('#roll_avatar')[0].src = aud.avatar;
-  $('#roll_nick').text(aud.nick);
+  $('#roll_nick').text(aud.name);
   
   setTimeout(roll, window.LOT.speed);
 };
@@ -360,7 +365,7 @@ var loadLottery = function(e) {
 
   window.LOT = e;
   window.LOT.ri = 0;
-  window.LOT.speed = 20;
+  window.LOT.speed = window.LOTSPEED;
   window.LOT.avatars = [];
   window.LOT.winners = [];
   window.LOT.allWinners = [];
@@ -388,6 +393,7 @@ var loadLottery = function(e) {
 
 $(function() {
   window.CM = createCM(document.getElementById('stage'));
+  window.LOTSPEED = 20;
   CM.start();
 
   var image = $('#image')[0];
@@ -440,10 +446,12 @@ socket.on('startlot', function(e) {
 socket.on('startroll', function(e) {
   if (window.LOT.winners.length < window.LOT.count) {
     window.LOT.frozen = false;
+    window.LOT.speed = window.LOTSPEED;
     setTimeout(roll, window.LOT.speed);
   }
 });
 
 socket.on('stoproll', function(e) {
   window.LOT.frozen = true;
+  window.LOT.ticks = 20;
 });
