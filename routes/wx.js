@@ -57,6 +57,8 @@ var createPassiveTeletext = function(from, to, title, desc, pic, url) {
 
 var onScan = function(wxmp, from, to, scene, ticket, callback) {
   console.log('扫码：' + scene + ', ' + ticket);
+  var msg = createPassivePlaintext(to, from, '少侠您来晚了，扫码登机通道已经关闭！');
+  return callback(null, msg);
 
   var updateAudience = function(ticket, openid, callback) {
     getToken(wxmp, function(err, token) {
@@ -131,7 +133,7 @@ var onScan = function(wxmp, from, to, scene, ticket, callback) {
 
   return task(ticket, from, function(err, result) {
     if (err) {
-      var msg = createPassiveTeletext(to, from, err.message);
+      var msg = createPassivePlaintext(to, from, err.message);
       return callback(null, msg);
     };
 
