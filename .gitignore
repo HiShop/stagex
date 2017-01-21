@@ -39,3 +39,5 @@ jspm_packages
 public/assets
 public/programs
 assets
+stagex.mongo
+mongosync
