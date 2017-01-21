@@ -313,7 +313,7 @@ var appendWinner = function(ri) {
     window.LOT.winners.push(ri);
     window.LOT.allWinners.push(ri);
     var imgUrl = "http://mserver/avatars/" + aud._id + ".jpg";
-    $('#winners ul').append('<li><img src="' + aud.avatar + '"><h3>' + aud.name+ '</h3>');
+    $('#winners ul').append('<li><img src="' + imgUrl + '"><h3>' + aud.name+ '</h3>');
   });
 };
 
@@ -343,10 +343,6 @@ var roll = function() {
   }
 
   var aud = window.LOT.audiences[window.LOT.ri];
-
-  if (aud.avatar == null) {
-    console.log(aud);
-  }
 
   $('#roll_avatar')[0].src = "http://mserver/avatars/" + aud._id + ".jpg";
   $('#roll_nick').text(aud.name);
@@ -501,8 +497,6 @@ socket.on('ctlplay', function(e) {
 });
 
 socket.on('ctlstop', function(e) {
-  console.log('stop!!!!');
-
   if (window.player) {
     window.player.pause();
     window.player.src = '';
