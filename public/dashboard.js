@@ -1,6 +1,11 @@
 var loadImage = function() {
-  var url = $(this).data().url;
-  $.post("/admin/action/loadimg", {url: url}, function(data) {
+  var payload = {
+    url: $(this).data().url,
+    index: $(this).data().index,
+    count: $(this).data().count
+  };
+
+  $.post("/admin/action/loadimg", payload, function(data) {
     console.log(data);
   });
 };
@@ -77,7 +82,7 @@ var onAction = function() {
   var title = $(this).data().title;
   var count = $(this).data().count;
   var text = $(this).text();
-  
+
   if (fn == "mc") {
     text == "点击启动" && startLottery($(this), scene, lotid, title, count);
     text == "点击关闭" && stopLottery($(this), scene, lotid);
@@ -107,7 +112,7 @@ var onStop = function() {
 
 var onBG = function() {
   var url = $(this).data().url;
-  $.post("/admin/action/ctlbg", {url: url}, function(data) {
+  $.post("/admin/action/ctlbg", {url: url, index: 0, length: 1}, function(data) {
     console.log(data);
   });
 };

@@ -17,7 +17,7 @@ router.get('/action/fullscreen', function(req, res, next) {
 });
 
 router.post('/action/loadimg', function(req, res, next) {
-  req.app.locals.io.emit('loadimg', {url: req.body.url});
+  req.app.locals.io.emit('loadimg', req.body);
   res.json({result: 'ok'});
 });
 

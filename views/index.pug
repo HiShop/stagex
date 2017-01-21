@@ -45,8 +45,8 @@ block content
           if p.images
             div(class="page_ev_cts page_thumb_cts")
               ul
-                each img in p.images
-                  li(class="action_image" data-url=img.url)
+                each img, i in p.images
+                  li(class="action_image" data-url=img.url data-index=i data-count=p.images.length)
                     img(src=img.url)
          
           if p.musics

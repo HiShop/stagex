@@ -235,7 +235,7 @@ var launchFullScreen = function (element) {
   }
 };
 
-var loadImage = function(url) {
+var loadImageFromUrl = function(url) {
   var img = $('#image')[0];
   img.src = url;
 
@@ -246,6 +246,16 @@ var loadImage = function(url) {
   vp.load(); 
   vp.hidden = true;
   img.hidden = false;
+};
+
+var loadImage = function(e) {
+  window.IMG = {
+    path: e.url.substr(0, e.url.lastIndexOf('/') + 1),
+    index: parseInt(e.index),
+    count: parseInt(e.count)
+  };
+
+  loadImageFromUrl(e.url);
 };
 
 var stopPlay = function() {
@@ -406,13 +416,29 @@ $(function() {
   window.LOTSPEED = 20;
   CM.start();
 
+  $(document).keydown(function(e) {
+    if (window.IMG) {
+      if(e.which == 33) {
+        if (window.IMG.index > 0) {
+          window.IMG.index -= 1;
+          loadImageFromUrl(window.IMG.path + (window.IMG.index + 1) + ".jpg");
+        }
+      } else if(e.which == 34) {
+        if (window.IMG.index < window.IMG.count - 1) {
+          window.IMG.index += 1;
+          loadImageFromUrl(window.IMG.path + (window.IMG.index + 1) + ".jpg");
+        }
+      }
+    }
+  });
+
   var image = $('#image')[0];
   image.hidden = true;
   $('#layer_lot')[0].hidden = true;
 
   var curtain = $("#curtain").get(0);
   wrapper.addEventListener("dblclick", function(e) {
-	launchFullScreen(curtain);
+    launchFullScreen(curtain);
   });
 });
 
@@ -423,11 +449,11 @@ socket.on('biu', function(text) {
   if (ci > 0) ci -= 1;
 
   var cmt = {
-	mode: 1,
-	size: 50,
-	dur: 1000 * 30,
-	color: safeColors[ci],
-	text: text,
+    mode: 1,
+    size: 50,
+    dur: 1000 * 30,
+    color: safeColors[ci],
+    text: text
   };
 
   CM.send(cmt);
@@ -438,7 +464,7 @@ socket.on('fullscreen', function(e) {
 });
 
 socket.on('loadimg', function(e) {
-  loadImage(e.url);
+  loadImage(e);
 });
 
 socket.on('loadmusic', function(e) {
@@ -485,5 +511,5 @@ socket.on('ctlstop', function(e) {
 });
 
 socket.on('ctlbg', function(e) {
-  loadImage(e.url);
+  loadImage(e);
 });
