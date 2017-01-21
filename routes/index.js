@@ -10,13 +10,14 @@ router.get('/hi2017', function(req, res, next) {
   fs.readFile(programFiles , 'utf8', function (err, data) {
     if (err) throw err;
     res.render('index', {
+      title: '主控台',
       programs: JSON.parse(data)
     });
   });
 });
 
 router.get('/player', function(req, res, next) {
-  res.render('player', { title: 'Express' });
+  res.render('player', { title: '舞台播放器' });
 });
 
 router.get('/qr/:lot?', function(req, res, next) {

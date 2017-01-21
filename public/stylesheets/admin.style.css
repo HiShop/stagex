@@ -142,6 +142,7 @@ div {
     padding: 7px;
     border: 1px solid #1AAD19;
     border-radius: 5px;
+    background-color: #efe;
 }
 
 .page_ev_title {
@@ -224,6 +225,7 @@ div {
 
 .page_ev_cts ul li img {
     width: 100%;
+    height: 100%;
     border: none;
 }
 
@@ -234,18 +236,44 @@ div {
 .page_ev_cts button.action_button {
     color: #fff;
     background-color: #1AAD19;
-    padding: 7px 1.5em;
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-right: 0.5em;
     cursor: pointer;
+    margin-bottom: 15px;
+    width: 135px;
+    height: 50px;
 }
 
 .control_bar {
     position: fixed;
     top: 100px;
     right: 0;
-    width: 50px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 7px;
+    opacity:0.85;
+}
+
+.control_bar ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.control_bar ul li {
+    padding: 5px 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    background-color: #1AAD19;
+    border: 2px solid #1A8D19;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.control_bar ul li:last-child {
+    margin-bottom: 0;
 }
 
 .control_bar div {

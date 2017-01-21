@@ -87,10 +87,39 @@ var onAction = function() {
   }
 };
 
+var onPause = function() {
+  $.post("/admin/action/ctlpause", function(data) {
+    console.log(data);
+  });
+};
+
+var onPlay = function() {
+  $.post("/admin/action/ctlplay", function(data) {
+    console.log(data);
+  });
+};
+
+var onStop = function() {
+  $.post("/admin/action/ctlstop", function(data) {
+    console.log(data);
+  });
+};
+
+var onBG = function() {
+  var url = $(this).data().url;
+  $.post("/admin/action/ctlbg", {url: url}, function(data) {
+    console.log(data);
+  });
+};
+
 $(function() {
   console.log('HiShop.云舞台控制面板加载');
   $(".action_image").on("click", loadImage);
   $(".action_music").on("click", loadMusic);
   $(".action_movie").on("click", loadMovie);
   $(".action_button").on("click", onAction);
+  $("#btn_pause").on("click", onPause);
+  $("#btn_play").on("click", onPlay);
+  $("#btn_stop").on("click", onStop);
+  $("#btn_bg").on("click", onBG);
 });

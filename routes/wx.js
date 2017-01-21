@@ -285,7 +285,7 @@ router.all('/checkin/:openid?', function(req, res, next) {
   if (req.method == 'POST') {
     var surename = req.body.surename.trim();
 
-    if (surename.length > 0 && surename.length < 8) {
+    if (surename.length > 0 && surename.length < 10) {
       var query = {openid: openid};
       var update = {$set: {name: surename}};
       var options = {'new': true};

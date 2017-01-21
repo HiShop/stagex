@@ -240,11 +240,11 @@ var loadImage = function(url) {
   img.src = url;
 
   $('#layer_lot')[0].hidden = true;
-  var player = $('#vplayer')[0];
-  player.pause();
-  player.src = ''; 
-  player.load(); 
-  player.hidden = true;
+  var vp = $('#vplayer')[0];
+  vp.pause();
+  vp.src = ''; 
+  vp.load(); 
+  vp.hidden = true;
   img.hidden = false;
 };
 
@@ -270,20 +270,24 @@ var loadMovie = function(url) {
   vp.load(); 
   vp.hidden = false;
   vp.play();
+  window.player = vp;
 };
 
 var loadMusic = function(url) {
   stopPlay();
 
-  var player = $('#aplayer')[0];
-  player.src = url;
-  player.play();
+  var ap = $('#aplayer')[0];
+  ap.src = url;
+  ap.play();
+  
+  window.player = ap;
 };
 
 var appendWinnerLocal = function(ri) {
   var aud = window.LOT.audiences[ri];
   window.LOT.winners.push(ri);
-  $('#winners ul').append('<li><img src="' + aud.avatar + '"><h3>' + aud.name+ '</h3>');
+  var imgUrl = "http://mserver/avatars/" + aud._id + ".jpg";
+  $('#winners ul').append('<li><img src="' + imgUrl + '"><h3>' + aud.name+ '</h3>');
 };
 
 var appendWinner = function(ri) {
@@ -298,6 +302,7 @@ var appendWinner = function(ri) {
   $.post("/admin/action/win", payload, function(data) {
     window.LOT.winners.push(ri);
     window.LOT.allWinners.push(ri);
+    var imgUrl = "http://mserver/avatars/" + aud._id + ".jpg";
     $('#winners ul').append('<li><img src="' + aud.avatar + '"><h3>' + aud.name+ '</h3>');
   });
 };
@@ -328,7 +333,12 @@ var roll = function() {
   }
 
   var aud = window.LOT.audiences[window.LOT.ri];
-  $('#roll_avatar')[0].src = aud.avatar;
+
+  if (aud.avatar == null) {
+    console.log(aud);
+  }
+
+  $('#roll_avatar')[0].src = "http://mserver/avatars/" + aud._id + ".jpg";
   $('#roll_nick').text(aud.name);
   
   setTimeout(roll, window.LOT.speed);
@@ -372,7 +382,7 @@ var loadLottery = function(e) {
 
   var list = [];
   for (var i in e.audiences) {
-    list.push(e.audiences[i].avatar);
+    list.push("http://mserver/avatars/" + e.audiences[i]._id + ".jpg");
   }
 
   $('#lot_title').text(window.LOT.title);
@@ -454,4 +464,26 @@ socket.on('startroll', function(e) {
 socket.on('stoproll', function(e) {
   window.LOT.frozen = true;
   window.LOT.ticks = 20;
+});
+
+socket.on('ctlpause', function(e) {
+  window.player && window.player.pause();
+});
+
+socket.on('ctlplay', function(e) {
+  window.player && window.player.play();
+});
+
+socket.on('ctlstop', function(e) {
+  console.log('stop!!!!');
+
+  if (window.player) {
+    window.player.pause();
+    window.player.src = '';
+    window.player.load();
+  }
+});
+
+socket.on('ctlbg', function(e) {
+  loadImage(e.url);
 });
