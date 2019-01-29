@@ -29,36 +29,43 @@ block content
         div(class="page_ev_hd")
           div(class="page_ev_category")
             h3=p.type
-        
+
         div(class="page_ev_bd")
           div(class="page_ev_title")
             h3="[" + p.id + "] " + p.title
-          
-          div(class="page_ev_desc")
+
+          div(class="page_ev_actors")
             p=p.actors
-          
+
+          div(class="page_ev_desc")
+            p=p.desc
+
           if p.lottery
             div(class="page_ev_cts")
               button(class="action_button" data-fn="mc" data-title=p.title data-count=p.count data-scene=p.scene data-lotid=p.lottery) 点击启动
               button(class="action_button" data-fn="roll" data-title=p.title data-count=p.count data-scene=p.scene data-lotid=p.lottery) 点击滚动
-         
+
           if p.images
             div(class="page_ev_cts page_thumb_cts")
               ul
                 each img, i in p.images
                   li(class="action_image" data-url=img.url data-index=i data-count=p.images.length)
                     img(src=img.url)
-         
+
           if p.musics
             div(class="page_ev_cts page_thumb_cts")
               ul
+                li(class="action_music_repeat")
+                  h3=""
                 each m in p.musics
                   li(class="action_music" data-url=m.url)
                     h3=m.title
-         
+
           if p.movies
             div(class="page_ev_cts page_thumb_cts")
               ul
+                li(class="action_movie_repeat")
+                  h3=""
                 each m in p.movies
                   li(class="action_movie" data-url=m.url)
                     h3=m.title

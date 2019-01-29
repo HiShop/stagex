@@ -5,7 +5,7 @@ var M = require('../models');
 
 var router = express.Router();
 
-router.get('/hi2017', function(req, res, next) {
+router.get('/hi2019', function(req, res, next) {
   var programFiles = path.resolve('./data/programs.json');
   fs.readFile(programFiles , 'utf8', function (err, data) {
     if (err) throw err;

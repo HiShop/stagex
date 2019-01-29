@@ -6,130 +6,150 @@
     "actors": "HiShop",
     "images": [
         {
-            "title": "主题背景",
-            "url": "http://mserver/programs/01/bg.jpg"
+            "title": "年会主题背景",
+            "url": "http://localhost/assets/programs/01/bg.jpg"
+        },
+        {
+            "title": "签到互动",
+            "url": "http://localhost/assets/programs/01/bg2.png"
+        },
+        {
+            "title": "奖品",
+            "url": "http://localhost/assets/programs/01/bg3.png"
         }
     ],
     "musics": [
         {
             "title": "财神来到我家门",
-            "url": "http://mserver/programs/01/01.mp3"
+            "url": "http://localhost/assets/programs/01/01.mp3"
         },
         {
             "title": "春节序曲",
-            "url": "http://mserver/programs/01/02.mp3"
-        },
-        {
-            "title": "恭喜发财",
-            "url": "http://mserver/programs/01/03.mp3"
-        },
-        {
-            "title": "恭喜发财歌",
-            "url": "http://mserver/programs/01/04.mp3"
+            "url": "http://localhost/assets/programs/01/02.mp3"
         },
         {
             "title": "喜气洋洋",
-            "url": "http://mserver/programs/01/05.mp3"
-        },
-        {
-            "title": "迎春花",
-            "url": "http://mserver/programs/01/06.mp3"
-        },
-        {
-            "title": "祝福你",
-            "url": "http://mserver/programs/01/07.mp3"
+            "url": "http://localhost/assets/programs/01/03.mp3"
         },
         {
             "title": "新年快乐 - 忧欢派对,小虎队",
-            "url": "http://mserver/programs/01/08.mp3"
+            "url": "http://localhost/assets/programs/01/04.mp3"
         },
         {
             "title": "新年快乐 - 中国娃娃",
-            "url": "http://mserver/programs/01/09.mp3"
+            "url": "http://localhost/assets/programs/01/05.mp3"
+        },
+        {
+            "title": "和田光司 - Butter-Fly",
+            "url": "http://localhost/assets/programs/01/06.mp3"
+        },
+        {
+            "title": "沈谧仁 - 琵琶行",
+            "url": "http://localhost/assets/programs/01/07.mp3"
+        },
+        {
+            "title": "新乐尘符 - 123我爱你",
+            "url": "http://localhost/assets/programs/01/08.mp3"
+        },
+        {
+            "title": "周华健武侠串烧",
+            "url": "http://localhost/assets/programs/01/09.mp3"
+        },
+        {
+            "title": "Flavel & Neto - Eu Quero Tchu, Eu Quero Tcha",
+            "url": "http://localhost/assets/programs/01/10.mp3"
+        },
+        {
+            "title": "WANDS - 世界が剿るまでは⋯ (直到世界尽头)",
+            "url": "http://localhost/assets/programs/01/11.mp3"
+        }
+    ],
+    "movies": [
+        {
+            "title": "轮播视频01",
+            "url": "http://localhost/assets/programs/01/movies/01.mp4"
+        },
+        {
+            "title": "轮播视频02",
+            "url": "http://localhost/assets/programs/01/movies/02.mp4"
+        },
+        {
+            "title": "轮播视频03",
+            "url": "http://localhost/assets/programs/01/movies/03.mp4"
+        },
+        {
+            "title": "轮播视频04",
+            "url": "http://localhost/assets/programs/01/movies/04.mp4"
+        },
+        {
+            "title": "轮播视频05",
+            "url": "http://localhost/assets/programs/01/movies/05.mp4"
+        },
+        {
+            "title": "轮播视频06",
+            "url": "http://localhost/assets/programs/01/movies/06.mp4"
         }
     ]
   },
   {
     "id": "02",
     "type": "综合",
-    "title": "年会开场创意配音短片",
+    "title": "年会开场视频",
     "actors": "HiShop",
+    "desc": "注意事项的通告（手机调静音、会场秩序、公司片段、三位单人展示、团队拜年、家人拜年等",
     "movies": [
         {
-            "title": "主题视频",
-            "url": "http://mserver/programs/02/bg.mp4"
+            "title": "开场视频",
+            "url": "http://localhost/assets/programs/02/bg.mp4"
         }
     ]
   },
   {
     "id": "03",
     "type": "演讲",
-    "title": "BOSS主题演讲",
-    "actors": "HiShop",
+    "title": "HiShop创始人致辞",
+    "actors": "杨斌",
+    "desc": "杨总致词，支持带演讲稿和PPT播放，请杨总结束语带出“回顾2018”",
     "images": [
         {
-            "title": "红灯片",
-            "url": "http://mserver/programs/03/1.jpg"
+            "title": "P1",
+            "url": "http://localhost/assets/programs/03/01.jpg"
         },
         {
-            "title": "红灯片",
-            "url": "http://mserver/programs/03/2.jpg"
+            "title": "P2",
+            "url": "http://localhost/assets/programs/03/02.jpg"
         },
         {
-            "title": "红灯片",
-            "url": "http://mserver/programs/03/3.jpg"
+            "title": "P3",
+            "url": "http://localhost/assets/programs/03/03.jpg"
         },
         {
-            "title": "红灯片",
-            "url": "http://mserver/programs/03/4.jpg"
+            "title": "P4",
+            "url": "http://localhost/assets/programs/03/04.jpg"
         },
         {
-            "title": "红灯片",
-            "url": "http://mserver/programs/03/5.jpg"
+            "title": "P5",
+            "url": "http://localhost/assets/programs/03/05.jpg"
         },
         {
-            "title": "红灯片",
-            "url": "http://mserver/programs/03/6.jpg"
+            "title": "P6",
+            "url": "http://localhost/assets/programs/03/06.jpg"
         },
         {
-            "title": "红灯片",
-            "url": "http://mserver/programs/03/7.jpg"
+            "title": "P7",
+            "url": "http://localhost/assets/programs/03/07.jpg"
         },
         {
-            "title": "红灯片",
-            "url": "http://mserver/programs/03/8.jpg"
+            "title": "P8",
+            "url": "http://localhost/assets/programs/03/08.jpg"
         },
         {
-            "title": "红灯片",
-            "url": "http://mserver/programs/03/9.jpg"
+            "title": "P9",
+            "url": "http://localhost/assets/programs/03/09.jpg"
         },
         {
-            "title": "红灯片",
-            "url": "http://mserver/programs/03/10.jpg"
-        },
-        {
-            "title": "红灯片",
-            "url": "http://mserver/programs/03/11.jpg"
-        },
-        {
-            "title": "红灯片",
-            "url": "http://mserver/programs/03/12.jpg"
-        },
-        {
-            "title": "红灯片",
-            "url": "http://mserver/programs/03/13.jpg"
-        },
-        {
-            "title": "红灯片",
-            "url": "http://mserver/programs/03/14.jpg"
-        },
-        {
-            "title": "红灯片",
-            "url": "http://mserver/programs/03/15.jpg"
-        },
-        {
-            "title": "红灯片",
-            "url": "http://mserver/programs/03/16.jpg"
+            "title": "P10",
+            "url": "http://localhost/assets/programs/03/10.jpg"
         }
     ]
   },
@@ -141,665 +161,844 @@
     "movies": [
         {
             "title": "主题视频",
-            "url": "http://mserver/programs/04/bg.mp4"
+            "url": "http://localhost/assets/programs/04/bg.mp4"
         }
     ]
   },
   {
     "id": "05",
     "type": "综合",
-    "title": "优秀员工与部门负责人颁奖",
+    "title": "主持人上场",
     "actors": "HiShop",
+    "desc": "主持人上场，宣布第二环节，主题”星光闪耀“（主持词需表达出，这是晚会最重要环节，所以先进行，公司感谢大家的付出）（庄重、正式）",
     "images": [
         {
-            "title": "年度优秀员工",
-            "url": "http://mserver/programs/05/01.jpg"
-        },
-        {
-            "title": "年度优秀负责人1",
-            "url": "http://mserver/programs/05/02.jpg"
-        },
-        {
-            "title": "年度优秀负责人2",
-            "url": "http://mserver/programs/05/03.jpg"
-        }
-    ],
-    "musics": [
-        {
-            "title": "出场音乐",
-            "url": "http://mserver/programs/05/01.mp3"
-        },
-        {
-            "title": "颁奖过程中音乐",
-            "url": "http://mserver/programs/05/02.mp3"
+            "title": "年度颁奖图",
+            "url": "http://localhost/assets/programs/05/01.jpg"
         }
     ]
   },
   {
     "id": "06",
-    "type": "舞蹈",
-    "title": "八戒八戒",
-    "actors": "售后综合部",
+    "type": "综合",
+    "title": "颁奖典礼",
+    "actors": "优秀员工、优秀负责人",
+    "desc": "1、优秀员工图+BGM：先颁奖“hi客之星”，需要对每个获奖人员有介绍，要代表发表感言 （随机安排两个）2、优秀负责人图+BGM：第二颁奖最佳负责人（每个负责人需要有一个页面展示，颁奖一个发表感言，再颁奖第二个）",
     "images": [
         {
-            "title": "主题背景",
-            "url": "http://mserver/programs/06/bg.jpg"
+            "title": "优秀员工",
+            "url": "http://localhost/assets/programs/06/01.jpg"
+        },
+        {
+            "title": "优秀负责人 - 余漫游",
+            "url": "http://localhost/assets/programs/06/02.jpg"
+        },
+        {
+            "title": "优秀负责人 - 陈胜",
+            "url": "http://localhost/assets/programs/06/03.jpg"
         }
     ],
     "musics": [
         {
-            "title": "八戒八戒主题音乐",
-            "url": "http://mserver/programs/06/bg.mp3"
+            "title": "颁奖音乐",
+            "url": "http://localhost/assets/programs/06/bg.mp3"
         }
     ]
   },
   {
     "id": "07",
-    "type": "综艺",
-    "title": "舞台秀蜜汁天鹅",
-    "actors": "营销部",
+    "type": "舞蹈",
+    "title": "《那年我们才十八》",
+    "actors": "财务部：余漫游、王白丽、欧阳萍、吴灵芝、刘静波、卢宁、蔡佳玲",
+    "desc": "注意事项：",
     "images": [
         {
-            "title": "动画背景GIF图",
-            "url": "http://mserver/programs/07/bg.gif"
+            "title": "报幕图",
+            "url": "http://localhost/assets/programs/07/bg.jpg"
         }
     ],
-    "musics": [
+    "movies": [
         {
-            "title": "魔鬼舞确认",
-            "url": "http://mserver/programs/07/01.mp3"
-        },
-        {
-            "title": "小鸡",
-            "url": "http://mserver/programs/07/02.mp3"
-        },
-        {
-            "title": "The Knife-Got 2 Let U",
-            "url": "http://mserver/programs/07/03.mp3"
+            "title": "主题视频",
+            "url": "http://localhost/assets/programs/07/bg.mp4"
         }
     ]
   },
   {
     "id": "08",
-    "type": "小品",
-    "title": "测谎仪",
-    "actors": "移动云商城",
+    "type": "歌唱",
+    "title": "《我怀念的》",
+    "actors": "业务部：王玢",
     "images": [
         {
-            "title": "主题背景",
-            "url": "http://mserver/programs/08/bg.jpg"
+            "title": "报幕图",
+            "url": "http://localhost/assets/programs/08/bg.jpg"
         }
     ],
-    "musics": [
+    "movies": [
         {
-            "title": "长报警声",
-            "url": "http://mserver/programs/08/01.mp3"
-        },
-        {
-            "title": "短报警声",
-            "url": "http://mserver/programs/08/02.mp3"
+            "title": "主题视频",
+            "url": "http://localhost/assets/programs/08/bg.mp4"
         }
     ]
   },
   {
     "id": "09",
-    "type": "游戏",
-    "title": "第一轮游戏你来作怪我来喷",
-    "actors": "",
+    "type": "小品",
+    "title": "《大笑三国》",
+    "actors": "表演者：黄功平、陈利军、周新星、蒯伟、周奕岑、赵崇靖、余彬、鲁伯稳",
     "images": [
         {
-            "title": "主题背景",
-            "url": "http://mserver/programs/09/bg.jpg"
+            "title": "报幕图",
+            "url": "http://localhost/assets/programs/09/bg.jpg"
+        },
+        {
+            "title": "节目素材图1",
+            "url": "http://localhost/assets/programs/09/01.jpg"
+        },
+        {
+            "title": "节目素材图2",
+            "url": "http://localhost/assets/programs/09/02.jpg"
+        },
+        {
+            "title": "节目素材图3",
+            "url": "http://localhost/assets/programs/09/03.jpg"
         }
     ],
     "musics": [
         {
-            "title": "背景音乐1",
-            "url": "http://mserver/programs/game/01.mp3"
+            "title": "前情提要",
+            "url": "http://localhost/assets/programs/09/bg.wav"
         },
         {
-            "title": "背景音乐2",
-            "url": "http://mserver/programs/game/02.mp3"
+            "title": "4 - 灵光一闪",
+            "url": "http://localhost/assets/programs/09/04.mp3"
         },
         {
-            "title": "背景音乐3",
-            "url": "http://mserver/programs/game/03.mp3"
+            "title": "5 - 刀剑砍杀",
+            "url": "http://localhost/assets/programs/09/05.mp3"
         },
         {
-            "title": "背景音乐4",
-            "url": "http://mserver/programs/game/04.mp3"
+            "title": "6 - 刀剑砍杀",
+            "url": "http://localhost/assets/programs/09/06.mp3"
+        },
+        {
+            "title": "7 - 敌国来袭",
+            "url": "http://localhost/assets/programs/09/07.mp3"
+        },
+        {
+            "title": "8 - 寂静场面",
+            "url": "http://localhost/assets/programs/09/08.mp3"
+        },
+        {
+            "title": "9 - 结束尾音",
+            "url": "http://localhost/assets/programs/09/09.mp3"
         }
     ]
   },
   {
     "id": "10",
     "type": "抽奖活动",
-    "title": "第一轮抽奖5个幸运奖",
+    "title": "第一轮抽奖及互动环节",
     "actors": "主持人",
-    "scene": 2017,
-    "lottery": 4,
-    "count": 30,
-    "musics": [
+    "images": [
         {
-            "title": "抽奖开始",
-            "url": "http://mserver/programs/choujiang/01.mp3"
+            "title": "报幕图",
+            "url": "http://localhost/assets/programs/10/bg.jpg"
         },
         {
-            "title": "领奖音乐",
-            "url": "http://mserver/programs/choujiang/02.mp3"
+            "title": "抽奖进行时",
+            "url": "http://localhost/assets/programs/10/01.jpg"
+        },
+        {
+            "title": "01",
+            "url": "http://localhost/assets/programs/10/gamewords/01.jpg"
+        },
+        {
+            "title": "02",
+            "url": "http://localhost/assets/programs/10/gamewords/02.jpg"
+        },
+        {
+            "title": "03",
+            "url": "http://localhost/assets/programs/10/gamewords/03.jpg"
+        },
+        {
+            "title": "04",
+            "url": "http://localhost/assets/programs/10/gamewords/04.jpg"
+        },
+        {
+            "title": "05",
+            "url": "http://localhost/assets/programs/10/gamewords/05.jpg"
+        },
+        {
+            "title": "06",
+            "url": "http://localhost/assets/programs/10/gamewords/06.jpg"
+        },
+        {
+            "title": "07",
+            "url": "http://localhost/assets/programs/10/gamewords/07.jpg"
+        },
+        {
+            "title": "08",
+            "url": "http://localhost/assets/programs/10/gamewords/08.jpg"
+        },
+        {
+            "title": "09",
+            "url": "http://localhost/assets/programs/10/gamewords/09.jpg"
+        },
+        {
+            "title": "10",
+            "url": "http://localhost/assets/programs/10/gamewords/10.jpg"
+        },
+        {
+            "title": "11",
+            "url": "http://localhost/assets/programs/10/gamewords/11.jpg"
+        },
+        {
+            "title": "12",
+            "url": "http://localhost/assets/programs/10/gamewords/12.jpg"
+        },
+        {
+            "title": "13",
+            "url": "http://localhost/assets/programs/10/gamewords/13.jpg"
+        },
+        {
+            "title": "14",
+            "url": "http://localhost/assets/programs/10/gamewords/14.jpg"
+        },
+        {
+            "title": "15",
+            "url": "http://localhost/assets/programs/10/gamewords/15.jpg"
+        },
+        {
+            "title": "16",
+            "url": "http://localhost/assets/programs/10/gamewords/16.jpg"
+        },
+        {
+            "title": "17",
+            "url": "http://localhost/assets/programs/10/gamewords/17.jpg"
+        },
+        {
+            "title": "18",
+            "url": "http://localhost/assets/programs/10/gamewords/18.jpg"
+        },
+        {
+            "title": "19",
+            "url": "http://localhost/assets/programs/10/gamewords/19.jpg"
+        },
+        {
+            "title": "20",
+            "url": "http://localhost/assets/programs/10/gamewords/20.jpg"
+        },
+        {
+            "title": "21",
+            "url": "http://localhost/assets/programs/10/gamewords/21.jpg"
+        },
+        {
+            "title": "22",
+            "url": "http://localhost/assets/programs/10/gamewords/22.jpg"
+        },
+        {
+            "title": "23",
+            "url": "http://localhost/assets/programs/10/gamewords/23.jpg"
+        },
+        {
+            "title": "24",
+            "url": "http://localhost/assets/programs/10/gamewords/24.jpg"
+        },
+        {
+            "title": "25",
+            "url": "http://localhost/assets/programs/10/gamewords/25.jpg"
+        },
+        {
+            "title": "26",
+            "url": "http://localhost/assets/programs/10/gamewords/26.jpg"
+        },
+        {
+            "title": "27",
+            "url": "http://localhost/assets/programs/10/gamewords/27.jpg"
+        },
+        {
+            "title": "28",
+            "url": "http://localhost/assets/programs/10/gamewords/28.jpg"
+        },
+        {
+            "title": "29",
+            "url": "http://localhost/assets/programs/10/gamewords/29.jpg"
+        },
+        {
+            "title": "30",
+            "url": "http://localhost/assets/programs/10/gamewords/30.jpg"
+        },
+        {
+            "title": "31",
+            "url": "http://localhost/assets/programs/10/gamewords/31.jpg"
+        },
+        {
+            "title": "32",
+            "url": "http://localhost/assets/programs/10/gamewords/32.jpg"
+        },
+        {
+            "title": "33",
+            "url": "http://localhost/assets/programs/10/gamewords/33.jpg"
+        },
+        {
+            "title": "34",
+            "url": "http://localhost/assets/programs/10/gamewords/34.jpg"
+        },
+        {
+            "title": "35",
+            "url": "http://localhost/assets/programs/10/gamewords/35.jpg"
+        },
+        {
+            "title": "36",
+            "url": "http://localhost/assets/programs/10/gamewords/36.jpg"
+        },
+        {
+            "title": "37",
+            "url": "http://localhost/assets/programs/10/gamewords/37.jpg"
+        },
+        {
+            "title": "38",
+            "url": "http://localhost/assets/programs/10/gamewords/38.jpg"
+        },
+        {
+            "title": "39",
+            "url": "http://localhost/assets/programs/10/gamewords/39.jpg"
+        },
+        {
+            "title": "40",
+            "url": "http://localhost/assets/programs/10/gamewords/40.jpg"
+        },
+        {
+            "title": "41",
+            "url": "http://localhost/assets/programs/10/gamewords/41.jpg"
+        },
+        {
+            "title": "42",
+            "url": "http://localhost/assets/programs/10/gamewords/42.jpg"
+        },
+        {
+            "title": "43",
+            "url": "http://localhost/assets/programs/10/gamewords/43.jpg"
+        },
+        {
+            "title": "44",
+            "url": "http://localhost/assets/programs/10/gamewords/44.jpg"
+        },
+        {
+            "title": "45",
+            "url": "http://localhost/assets/programs/10/gamewords/45.jpg"
+        },
+        {
+            "title": "46",
+            "url": "http://localhost/assets/programs/10/gamewords/46.jpg"
+        },
+        {
+            "title": "47",
+            "url": "http://localhost/assets/programs/10/gamewords/47.jpg"
+        },
+        {
+            "title": "48",
+            "url": "http://localhost/assets/programs/10/gamewords/48.jpg"
+        },
+        {
+            "title": "49",
+            "url": "http://localhost/assets/programs/10/gamewords/49.jpg"
+        },
+        {
+            "title": "50",
+            "url": "http://localhost/assets/programs/10/gamewords/50.jpg"
+        },
+        {
+            "title": "51",
+            "url": "http://localhost/assets/programs/10/gamewords/51.jpg"
+        },
+        {
+            "title": "52",
+            "url": "http://localhost/assets/programs/10/gamewords/52.jpg"
+        },
+        {
+            "title": "53",
+            "url": "http://localhost/assets/programs/10/gamewords/53.jpg"
+        },
+        {
+            "title": "54",
+            "url": "http://localhost/assets/programs/10/gamewords/54.jpg"
+        },
+        {
+            "title": "55",
+            "url": "http://localhost/assets/programs/10/gamewords/55.jpg"
+        },
+        {
+            "title": "56",
+            "url": "http://localhost/assets/programs/10/gamewords/56.jpg"
+        },
+        {
+            "title": "57",
+            "url": "http://localhost/assets/programs/10/gamewords/57.jpg"
+        },
+        {
+            "title": "58",
+            "url": "http://localhost/assets/programs/10/gamewords/58.jpg"
+        },
+        {
+            "title": "59",
+            "url": "http://localhost/assets/programs/10/gamewords/59.jpg"
+        },
+        {
+            "title": "60",
+            "url": "http://localhost/assets/programs/10/gamewords/60.jpg"
+        },
+        {
+            "title": "61",
+            "url": "http://localhost/assets/programs/10/gamewords/61.jpg"
+        },
+        {
+            "title": "62",
+            "url": "http://localhost/assets/programs/10/gamewords/62.jpg"
+        },
+        {
+            "title": "63",
+            "url": "http://localhost/assets/programs/10/gamewords/63.jpg"
+        },
+        {
+            "title": "64",
+            "url": "http://localhost/assets/programs/10/gamewords/64.jpg"
+        },
+        {
+            "title": "65",
+            "url": "http://localhost/assets/programs/10/gamewords/65.jpg"
+        },
+        {
+            "title": "66",
+            "url": "http://localhost/assets/programs/10/gamewords/66.jpg"
+        },
+        {
+            "title": "67",
+            "url": "http://localhost/assets/programs/10/gamewords/67.jpg"
+        },
+        {
+            "title": "68",
+            "url": "http://localhost/assets/programs/10/gamewords/68.jpg"
+        },
+        {
+            "title": "69",
+            "url": "http://localhost/assets/programs/10/gamewords/69.jpg"
+        },
+        {
+            "title": "70",
+            "url": "http://localhost/assets/programs/10/gamewords/70.jpg"
+        },
+        {
+            "title": "71",
+            "url": "http://localhost/assets/programs/10/gamewords/71.jpg"
+        },
+        {
+            "title": "72",
+            "url": "http://localhost/assets/programs/10/gamewords/72.jpg"
+        },
+        {
+            "title": "73",
+            "url": "http://localhost/assets/programs/10/gamewords/73.jpg"
+        },
+        {
+            "title": "74",
+            "url": "http://localhost/assets/programs/10/gamewords/74.jpg"
+        },
+        {
+            "title": "75",
+            "url": "http://localhost/assets/programs/10/gamewords/75.jpg"
+        },
+        {
+            "title": "76",
+            "url": "http://localhost/assets/programs/10/gamewords/76.jpg"
+        },
+        {
+            "title": "77",
+            "url": "http://localhost/assets/programs/10/gamewords/77.jpg"
+        },
+        {
+            "title": "78",
+            "url": "http://localhost/assets/programs/10/gamewords/78.jpg"
+        },
+        {
+            "title": "79",
+            "url": "http://localhost/assets/programs/10/gamewords/79.jpg"
+        },
+        {
+            "title": "80",
+            "url": "http://localhost/assets/programs/10/gamewords/80.jpg"
+        },
+        {
+            "title": "81",
+            "url": "http://localhost/assets/programs/10/gamewords/81.jpg"
+        },
+        {
+            "title": "82",
+            "url": "http://localhost/assets/programs/10/gamewords/82.jpg"
+        },
+        {
+            "title": "83",
+            "url": "http://localhost/assets/programs/10/gamewords/83.jpg"
+        },
+        {
+            "title": "84",
+            "url": "http://localhost/assets/programs/10/gamewords/84.jpg"
+        },
+        {
+            "title": "85",
+            "url": "http://localhost/assets/programs/10/gamewords/85.jpg"
+        },
+        {
+            "title": "86",
+            "url": "http://localhost/assets/programs/10/gamewords/86.jpg"
+        },
+        {
+            "title": "87",
+            "url": "http://localhost/assets/programs/10/gamewords/87.jpg"
+        },
+        {
+            "title": "88",
+            "url": "http://localhost/assets/programs/10/gamewords/88.jpg"
+        },
+        {
+            "title": "89",
+            "url": "http://localhost/assets/programs/10/gamewords/89.jpg"
+        },
+        {
+            "title": "90",
+            "url": "http://localhost/assets/programs/10/gamewords/90.jpg"
+        },
+        {
+            "title": "91",
+            "url": "http://localhost/assets/programs/10/gamewords/91.jpg"
+        },
+        {
+            "title": "92",
+            "url": "http://localhost/assets/programs/10/gamewords/92.jpg"
+        },
+        {
+            "title": "93",
+            "url": "http://localhost/assets/programs/10/gamewords/93.jpg"
+        },
+        {
+            "title": "94",
+            "url": "http://localhost/assets/programs/10/gamewords/94.jpg"
+        },
+        {
+            "title": "95",
+            "url": "http://localhost/assets/programs/10/gamewords/95.jpg"
+        },
+        {
+            "title": "96",
+            "url": "http://localhost/assets/programs/10/gamewords/96.jpg"
+        },
+        {
+            "title": "97",
+            "url": "http://localhost/assets/programs/10/gamewords/97.jpg"
+        },
+        {
+            "title": "98",
+            "url": "http://localhost/assets/programs/10/gamewords/98.jpg"
+        },
+        {
+            "title": "99",
+            "url": "http://localhost/assets/programs/10/gamewords/99.jpg"
+        },
+        {
+            "title": "100",
+            "url": "http://localhost/assets/programs/10/gamewords/100.jpg"
+        }
+    ],
+    "musics": [
+        {
+            "title": "开始游戏BGM",
+            "url": "http://localhost/assets/programs/10/bg.mp3"
+        },
+        {
+            "title": "抽奖BGM",
+            "url": "http://localhost/assets/programs/10/02.mp3"
         }
     ]
   },
   {
     "id": "11",
     "type": "舞蹈",
-    "title": "《bar bar bar》",
-    "actors": "财务部",
+    "title": "《往后余生+buttons》",
+    "actors": "渠道部+业务部：王媛、杨露",
+    "images": [
+        {
+            "title": "报幕图",
+            "url": "http://localhost/assets/programs/11/bg.jpg"
+        }
+    ],
     "movies": [
         {
-            "title": "音乐编辑 + 让爱传出去",
-            "url": "http://mserver/programs/11/01.mp4"
-        },
-        {
-            "title": "bar bar bar",
-            "url": "http://mserver/programs/11/02.mp4"
+            "title": "往后余生+爵士舞",
+            "url": "http://localhost/assets/programs/11/bg.mp4"
         }
     ]
   },
   {
     "id": "12",
-    "type": "小品",
-    "title": "全民互联网",
-    "actors": "分销事业部",
+    "type": "舞蹈",
+    "title": "《光猿》",
+    "actors": "私有云产品事业部：彭江雄、杨金远、刘礼义、李宏磊、谢凌霄",
+    "desc": "激光舞必须黑屏",
     "images": [
         {
-            "title": "主题背景",
-            "url": "http://mserver/programs/12/bg.jpg"
+            "title": "黑屏背景",
+            "url": "http://localhost/assets/programs/12/bg.jpg"
         }
     ],
     "musics": [
         {
-            "title": "老司机带带我",
-            "url": "http://mserver/programs/12/01.mp3"
-        },
-        {
-            "title": "难忘今宵",
-            "url": "http://mserver/programs/12/02.mp3"
+            "title": "BGM",
+            "url": "http://localhost/assets/programs/12/bg.mp3"
         }
     ]
   },
   {
     "id": "13",
-    "type": "歌舞",
-    "title": "歌曲串烧改霸歌",
-    "actors": "移动云商城",
+    "type": "魔术",
+    "title": "梦幻魔术",
+    "actors": "SaaS产品运营：徐嘉利、罗林海、徐沛、柴中锌",
     "images": [
         {
             "title": "主题背景",
-            "url": "http://mserver/programs/13/bg.jpg"
-        }
-    ],
-    "movies": [
-        {
-            "title": "被逼的",
-            "url": "http://mserver/programs/13/bg.mp4"
+            "url": "http://localhost/assets/programs/13/bg.jpg"
         }
     ]
   },
   {
     "id": "14",
-    "type": "综合",
-    "title": "老兵cosplay",
-    "actors": "",
-    "movies": [
+    "type": "抽奖活动",
+    "title": "第二轮抽奖及互动环节",
+    "actors": "主持人",
+    "images": [
         {
-            "title": "主题视频",
-            "url": "http://mserver/programs/14/bg.mp4"
+            "title": "报幕图",
+            "url": "http://localhost/assets/programs/14/bg.jpg"
+        },
+        {
+            "title": "抽奖进行时",
+            "url": "http://localhost/assets/programs/14/01.jpg"
+        }
+    ],
+    "musics": [
+        {
+            "title": "开始游戏BGM",
+            "url": "http://localhost/assets/programs/14/bg.mp3"
+        },
+        {
+            "title": "抽奖BGM",
+            "url": "http://localhost/assets/programs/14/02.mp3"
         }
     ]
   },
   {
     "id": "15",
-    "type": "抽奖活动",
-    "title": "第二轮抽奖5个幸运奖",
-    "actors": "主持人",
-    "scene": 2017,
-    "lottery": 4,
-    "count": 30,
+    "type": "舞蹈",
+    "title": "《今晚我最嗨》",
+    "actors": "老兵",
+    "images": [
+        {
+            "title": "黑屏背景",
+            "url": "http://localhost/assets/programs/15/bg.jpg"
+        }
+    ],
     "musics": [
         {
-            "title": "抽奖开始",
-            "url": "http://mserver/programs/choujiang/01.mp3"
+            "title": "BGM - 01",
+            "url": "http://localhost/assets/programs/15/01.mp3"
         },
         {
-            "title": "领奖音乐",
-            "url": "http://mserver/programs/choujiang/02.mp3"
+            "title": "BGM - 02",
+            "url": "http://localhost/assets/programs/15/02.mp3"
+        },
+        {
+            "title": "BGM - 03",
+            "url": "http://localhost/assets/programs/15/03.mp3"
         }
     ]
   },
   {
     "id": "16",
-    "type": "游戏",
-    "title": "第二轮游戏全民猜猜猜",
-    "actors": "",
+    "type": "歌唱",
+    "title": "《沙漠骆驼》",
+    "actors": "项目事业部：王光耀、廖日龙",
     "images": [
         {
-            "title": "主题背景",
-            "url": "http://mserver/programs/16/bg.jpg"
+            "title": "报幕图",
+            "url": "http://localhost/assets/programs/16/bg.jpg"
         }
     ],
-    "musics": [
+    "movies": [
         {
-            "title": "背景音乐1",
-            "url": "http://mserver/programs/game/01.mp3"
-        },
-        {
-            "title": "背景音乐2",
-            "url": "http://mserver/programs/game/02.mp3"
-        },
-        {
-            "title": "背景音乐3",
-            "url": "http://mserver/programs/game/03.mp3"
-        },
-        {
-            "title": "背景音乐4",
-            "url": "http://mserver/programs/game/04.mp3"
+            "title": "主题视频",
+            "url": "http://localhost/assets/programs/16/bg.mp4"
         }
     ]
   },
   {
     "id": "17",
-    "type": "小品",
-    "title": "小品大话西游",
-    "actors": "售后部",
+    "type": "舞蹈",
+    "title": "《Ci哩Ci哩》",
+    "actors": "项目事业部：黄丽丽、肖琳琳、彭丽群、孙鑫",
     "images": [
         {
-            "title": "主背景",
-            "url": "http://mserver/programs/17/bg.jpg"
-        },
-        {
-            "title": "打雷1",
-            "url": "http://mserver/programs/17/01.jpg"
-        },
-        {
-            "title": "打雷2",
-            "url": "http://mserver/programs/17/02.jpg"
+            "title": "报幕图",
+            "url": "http://localhost/assets/programs/17/bg.jpg"
         }
     ],
     "movies": [
         {
-            "title": "爱剪辑-那些一起走过的日子",
-            "url": "http://mserver/programs/17/01.mp4"
-        },
-        {
-            "title": "一生所爱",
-            "url": "http://mserver/programs/17/02.mp4"
-        }
-    ],
-    "musics": [
-        {
-            "title": "打雷声1",
-            "url": "http://mserver/programs/17/01.mp3"
-        },
-        {
-            "title": "打雷声2",
-            "url": "http://mserver/programs/17/02.mp3"
-        },
-        {
-            "title": "恋人 - 我的记忆 - 钢琴版纯音乐",
-            "url": "http://mserver/programs/17/03.mp3"
-        },
-        {
-            "title": "子非鱼同学 - 芦苇荡 - 萧版纯音乐",
-            "url": "http://mserver/programs/17/03.mp3"
+            "title": "主题视频",
+            "url": "http://localhost/assets/programs/17/bg.mp4"
         }
     ]
   },
   {
     "id": "18",
     "type": "舞蹈",
-    "title": "趣味体操",
-    "actors": "HiMall",
-    "movies": [
+    "title": "《夜上海》",
+    "actors": "新零售产品事业部：王春、曾倩、郑端、戴丹、李振宇、李作芳",
+    "images": [
         {
-            "title": "卸膊操",
-            "url": "http://mserver/programs/18/bg.mp4"
+            "title": "报幕图",
+            "url": "http://localhost/assets/programs/18/bg.jpg"
+        }
+    ],
+    "musics": [
+        {
+            "title": "BGM",
+            "url": "http://localhost/assets/programs/18/bg.mp3"
         }
     ]
   },
   {
     "id": "19",
-    "type": "综合",
-    "title": "直到世界尽头",
-    "actors": "营销部",
-    "movies": [
+    "type": "抽奖活动",
+    "title": "第三轮抽奖及互动环节",
+    "actors": "主持人",
+    "desc": "1、游戏图+BGM：进行第三轮游戏“默契投食” 2、抽奖图+BGM：同时抽出6个幸运奖名额，邀请游戏获胜者来抽，邀请苏总来抽出1个三等奖，1个一等奖，现场观众凭袖标上台领奖（现场颁发奖项KT板，奖品最后找节目组兑奖）",
+    "images": [
         {
-            "title": "直到世界尽头",
-            "url": "http://mserver/programs/19/bg.mp4"
+            "title": "报幕图",
+            "url": "http://localhost/assets/programs/19/bg.jpg"
+        },
+        {
+            "title": "抽奖进行时",
+            "url": "http://localhost/assets/programs/19/01.jpg"
+        }
+    ],
+    "musics": [
+        {
+            "title": "开始游戏BGM",
+            "url": "http://localhost/assets/programs/19/bg.mp3"
+        },
+        {
+            "title": "抽奖BGM",
+            "url": "http://localhost/assets/programs/19/02.mp3"
         }
     ]
   },
   {
     "id": "20",
-    "type": "小品",
-    "title": "小品机场培训师",
-    "actors": "营销部",
+    "type": "综合",
+    "title": "主持人结束语",
+    "actors": "主持人",
+    "desc": "1、主图：主持人引入年会结束，年会工作组所有同事上台进行表彰，领取纪念奖品，2、花絮视频：年会演职人员的前期准备工作，花絮视频播放，感谢各部门节目组，开始晚宴",
     "images": [
         {
-            "title": "机场培训师1",
-            "url": "http://mserver/programs/20/01.jpg"
-        },
-        {
-            "title": "机场培训师2",
-            "url": "http://mserver/programs/20/02.jpg"
+            "title": "报幕图",
+            "url": "http://localhost/assets/programs/20/bg.jpg"
         }
     ],
-    "musics": [
+    "movies": [
         {
-            "title": "惨叫声音",
-            "url": "http://mserver/programs/20/01.mp3"
-        },
-        {
-            "title": "飞机起飞音效",
-            "url": "http://mserver/programs/20/02.wav"
-        },
-        {
-            "title": "僵尸确认",
-            "url": "http://mserver/programs/20/03.mp3"
-        },
-        {
-            "title": "蟒蛇确认",
-            "url": "http://mserver/programs/20/04.mp3"
+            "title": "花絮视频",
+            "url": "http://localhost/assets/programs/20/bg.mp4"
         }
     ]
   },
   {
     "id": "21",
-    "type": "游戏",
-    "title": "第三轮游戏最佳狼队友",
-    "actors": "",
+    "type": "综合",
+    "title": "晚宴",
+    "actors": "全体Hi客",
     "images": [
         {
-            "title": "主题背景",
-            "url": "http://mserver/programs/21/bg.jpg"
+            "title": "报幕图",
+            "url": "http://localhost/assets/programs/21/bg.jpg"
         }
     ],
     "musics": [
         {
-            "title": "背景音乐1",
-            "url": "http://mserver/programs/game/01.mp3"
+            "title": "暖场1",
+            "url": "http://localhost/assets/programs/21/01.mp3"
         },
         {
-            "title": "背景音乐2",
-            "url": "http://mserver/programs/game/02.mp3"
-        },
-        {
-            "title": "背景音乐3",
-            "url": "http://mserver/programs/game/03.mp3"
-        },
-        {
-            "title": "背景音乐4",
-            "url": "http://mserver/programs/game/04.mp3"
+            "title": "暖场2",
+            "url": "http://localhost/assets/programs/21/02.mp3"
         }
     ]
   },
   {
     "id": "22",
     "type": "抽奖活动",
-    "title": "第三轮抽奖4个三等奖",
+    "title": "第四轮抽奖及互动环节",
     "actors": "主持人",
-    "scene": 2017,
-    "lottery": 3,
-    "count": 30,
+    "desc": "1、抽奖图+BGM：主持人抽6个幸运奖名额，2、特等奖专属BGM：特等奖，邀请老板来抽，现场观众凭袖标上台领奖（现场颁发奖项KT板，奖品最后找节目组兑奖）",
+    "images": [
+        {
+            "title": "抽奖进行时",
+            "url": "http://localhost/assets/programs/22/bg.jpg"
+        }
+    ],
     "musics": [
         {
-            "title": "抽奖开始",
-            "url": "http://mserver/programs/choujiang/01.mp3"
-        },
-        {
-            "title": "领奖音乐",
-            "url": "http://mserver/programs/choujiang/02.mp3"
+            "title": "抽奖BGM",
+            "url": "http://localhost/assets/programs/22/bg.mp3"
         }
     ]
   },
   {
     "id": "23",
-    "type": "小品",
-    "title": "忆童年",
-    "actors": "创新事业部",
+    "type": "综合",
+    "title": "最佳天使",
+    "actors": "最佳国王、天使",
+    "desc": "邀请最佳天使的国王上台，由天使揭秘",
     "images": [
         {
-            "title": "主题背景",
-            "url": "http://mserver/programs/23/bg.jpg"
+            "title": "抽奖进行时",
+            "url": "http://localhost/assets/programs/23/bg.png"
         }
     ],
     "musics": [
         {
-            "title": "同桌的你(伴奏版)",
-            "url": "http://mserver/programs/23/bg.mp3"
+            "title": "抽奖BGM",
+            "url": "http://localhost/assets/programs/23/bg.mp3"
         }
     ]
   },
   {
     "id": "24",
-    "type": "综艺",
-    "title": "蓝色下水道的传说",
-    "actors": "运营部",
-    "images": [
-        {
-            "title": "主题背景",
-            "url": "http://mserver/programs/24/bg.jpg"
-        }
-    ],
-    "musics": [
-        {
-            "title": "音乐1-PPAP",
-            "url": "http://mserver/programs/24/01.mp3"
-        },
-        {
-            "title": "音乐2-咋了爸爸",
-            "url": "http://mserver/programs/24/02.mp3"
-        }
-    ],
-    "movies": [
-        {
-            "title": "蓝色下水道的传说1",
-            "url": "http://mserver/programs/24/01.mp4"
-        },
-        {
-            "title": "蓝色下水道的传说2",
-            "url": "http://mserver/programs/24/02.mp4"
-        }
-    ]
-  },
-  {
-    "id": "25",
-    "type": "演奏",
-    "title": "独奏《卡农》",
-    "actors": "达达",
-    "images": [
-        {
-            "title": "主题背景",
-            "url": "http://mserver/programs/25/bg.jpg"
-        }
-    ]
-  },
-  {
-    "id": "26",
-    "type": "舞蹈",
-    "title": "你干嘛",
-    "actors": "大队部",
-    "images": [
-        {
-            "title": "主题背景",
-            "url": "http://mserver/programs/26/bg.jpg"
-        }
-    ],
-    "musics": [
-        {
-            "title": "你干嘛",
-            "url": "http://mserver/programs/26/bg.mp3"
-        }
-    ]
-  },
-  {
-    "id": "27",
-    "type": "其他",
-    "title": "主持人结束语",
-    "actors": "",
-    "images": [
-        {
-            "title": "年会主背景板",
-            "url": "http://mserver/programs/27/bg.jpg"
-        }
-    ]
-  },
-  {
-    "id": "28.1",
-    "type": "抽奖活动",
-    "title": "第四轮抽奖 - 2个二等奖",
-    "actors": "主持人",
-    "scene": 2017,
-    "lottery": 2,
-    "count": 30,
-    "musics": [
-        {
-            "title": "抽奖开始",
-            "url": "http://mserver/programs/choujiang/01.mp3"
-        },
-        {
-            "title": "领奖音乐",
-            "url": "http://mserver/programs/choujiang/02.mp3"
-        }
-    ]
-  },
-  {
-    "id": "28.2",
-    "type": "抽奖活动",
-    "title": "第四轮抽奖 - 1个一等奖",
-    "actors": "主持人",
-    "scene": 2017,
-    "lottery": 1,
-    "count": 30,
-    "musics": [
-        {
-            "title": "抽奖开始",
-            "url": "http://mserver/programs/choujiang/01.mp3"
-        },
-        {
-            "title": "领奖音乐",
-            "url": "http://mserver/programs/choujiang/02.mp3"
-        }
-    ]
-  },
-  {
-    "id": "28.3",
-    "type": "抽奖活动",
-    "title": "第四轮抽奖 - 1个特等奖",
-    "actors": "主持人",
-    "scene": 2017,
-    "lottery": 5,
-    "count": 30,
-    "musics": [
-        {
-            "title": "抽奖开始",
-            "url": "http://mserver/programs/choujiang/01.mp3"
-        },
-        {
-            "title": "领奖音乐",
-            "url": "http://mserver/programs/choujiang/02.mp3"
-        }
-    ]
-  },
-  {
-    "id": "29",
-    "type": "其他",
-    "title": "!!!!!!!备用，寿星生日庆祝仪式",
-    "actors": "",
-    "images": [
-        {
-            "title": "年会生日",
-            "url": "http://mserver/programs/29/bg.jpg"
-        }
-    ],
-    "musics": [
-        {
-            "title": "群星 - 生日歌",
-            "url": "http://mserver/programs/29/01.mp3"
-        },
-        {
-            "title": "猪你生日快乐",
-            "url": "http://mserver/programs/29/02.mp3"
-        },
-        {
-            "title": "SNH48 - 生日快乐",
-            "url": "http://mserver/programs/29/03.mp3"
-        }
-    ]
-  },
-  {
-    "id": "30",
-    "type": "其他",
-    "title": "节目评奖领奖",
-    "actors": "",
-    "musics": [
-        {
-            "title": "上场领奖",
-            "url": "http://mserver/programs/30/01.mp3"
-        },
-        {
-            "title": "颁奖过程中",
-            "url": "http://mserver/programs/30/02.mp3"
-        }
-    ]
-  },
-  {
-    "id": "31",
     "type": "综合",
-    "title": "晚宴进行时",
-    "actors": "HiShop",
+    "title": "寿星生日庆祝仪式",
+    "actors": "所有寿星",
+    "desc": "所有寿星上台，献书切蛋糕",
     "images": [
         {
-            "title": "主题背景",
-            "url": "http://mserver/programs/31/bg.jpg"
+            "title": "抽奖进行时",
+            "url": "http://localhost/assets/programs/24/bg.jpg"
         }
     ],
     "musics": [
         {
-            "title": "财神来到我家门",
-            "url": "http://mserver/programs/31/01.mp3"
-        },
-        {
-            "title": "春节序曲",
-            "url": "http://mserver/programs/31/02.mp3"
-        },
-        {
-            "title": "恭喜发财",
-            "url": "http://mserver/programs/31/03.mp3"
-        },
-        {
-            "title": "恭喜发财歌",
-            "url": "http://mserver/programs/31/04.mp3"
-        },
-        {
-            "title": "喜气洋洋",
-            "url": "http://mserver/programs/31/05.mp3"
-        },
-        {
-            "title": "迎春花",
-            "url": "http://mserver/programs/31/06.mp3"
-        },
-        {
-            "title": "祝福你",
-            "url": "http://mserver/programs/31/07.mp3"
-        },
-        {
-            "title": "新年快乐 - 忧欢派对,小虎队",
-            "url": "http://mserver/programs/31/08.mp3"
-        },
-        {
-            "title": "新年快乐 - 中国娃娃",
-            "url": "http://mserver/programs/31/09.mp3"
+            "title": "抽奖BGM",
+            "url": "http://localhost/assets/programs/24/bg.mp3"
         }
     ]
   }

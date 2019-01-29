@@ -1,9 +1,13 @@
+window.currentImage = null;
+
 var loadImage = function() {
   var payload = {
     url: $(this).data().url,
     index: $(this).data().index,
     count: $(this).data().count
-  };
+  }
+
+  window.currentImage = $(this)[0];
 
   $.post("/admin/action/loadimg", payload, function(data) {
     console.log(data);
@@ -117,6 +121,21 @@ var onBG = function() {
   });
 };
 
+var onKeyPress = function(e) {
+  if (e.which == 38 || e.which == 40) {
+    if (e.which == 38) {
+      target = $(window.currentImage).prev()
+    } else {
+      target = $(window.currentImage).next()
+    }
+    if (target.length > 0) {
+      target.click();
+    }
+    e.preventDefault();
+    return false;
+  }
+};
+
 $(function() {
   console.log('HiShop.云舞台控制面板加载');
   $(".action_image").on("click", loadImage);
@@ -127,4 +146,5 @@ $(function() {
   $("#btn_play").on("click", onPlay);
   $("#btn_stop").on("click", onStop);
   $("#btn_bg").on("click", onBG);
+  $(document).keydown(onKeyPress);
 });

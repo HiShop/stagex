@@ -41,3 +41,5 @@ public/programs
 assets
 stagex.mongo
 mongosync
+package-lock.json
+.DS_Store

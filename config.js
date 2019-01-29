@@ -2,7 +2,7 @@ var moment = require('moment');
 var WX = require('./common/wxapi')
 
 var config = {
-  db: 'mongodb://stagexweb:66260700#stagex@mgos/stagex',
+  db: 'mongodb://stagexdbo:qwe123123@localhost/admin',
   wxmp: {
     //appid: 'wx6f38b684087b31c2',
     //secret: '24877222fb70307244e3290b76116652'
@@ -16,7 +16,7 @@ var config = {
       WX.getToken(this.appid, this.secret, function(err, result) {
         if (err) return callback(err);
         this.mp.token = result.access_token;
-        
+
         var safeTimeout = result.expires_in - this.mp.advance;
         this.mp.expires  = moment().add(safeTimeout, 's').toDate();
         return callback(null, this.mp.token);
