@@ -122,8 +122,9 @@ var onBG = function() {
 };
 
 var onKeyPress = function(e) {
-  if (e.which == 38 || e.which == 40) {
-    if (e.which == 38) {
+  console.log(e.which);
+  if (e.which == 33 || e.which == 34 || e.which == 38 || e.which == 40) {
+    if (e.which == 38 || e.which == 33) {
       target = $(window.currentImage).prev()
     } else {
       target = $(window.currentImage).next()

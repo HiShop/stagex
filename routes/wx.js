@@ -13,6 +13,13 @@ var biu = function(io, text) {
   io.emit('biu', text);
 };
 
+router.post('/danmu/biu', function(req, res, next) {
+  msg = new Buffer(req.body.msg).toString()
+  console.log(msg);
+  biu(req.app.locals.io, msg);
+  return res.send('ok!');
+});
+
 router.get('/push', function(req, res, next) {
   if (req.query.echostr) {
     res.send(req.query.echostr);

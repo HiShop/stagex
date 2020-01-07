@@ -2,7 +2,7 @@ var moment = require('moment');
 var WX = require('./common/wxapi')
 
 var config = {
-  db: 'mongodb://stagexdbo:qwe123123@localhost/admin',
+  db: 'mongodb://stagexdbo:qwe123123@localhost/stagex',
   wxmp: {
     //appid: 'wx6f38b684087b31c2',
     //secret: '24877222fb70307244e3290b76116652'
