@@ -14,16 +14,38 @@ var loadImage = function() {
   });
 };
 
-var loadMusic  = function() {
+var loadMusic = function() {
   var url = $(this).data().url;
   $.post("/admin/action/loadmusic", {url: url}, function(data) {
     console.log(data);
   });
 };
 
-var loadMovie  = function() {
+var loadMovie = function() {
   var url = $(this).data().url;
   $.post("/admin/action/loadmovie", {url: url}, function(data) {
+    console.log(data);
+  });
+};
+
+var loadMusicPlayList = function() {
+  var siblings = $(this).siblings();
+  var list = [];
+  for(var i = 0;i < siblings.length; i++) {
+    list.push($(siblings[i]).data().url);
+  }
+  $.post("/admin/action/load/musiclist", {playlist: list}, function(data) {
+    console.log(data);
+  });
+};
+
+var loadMoviePlayList = function() {
+  var siblings = $(this).siblings();
+  var list = [];
+  for(var i = 0;i < siblings.length; i++) {
+    list.push($(siblings[i]).data().url);
+  }
+  $.post("/admin/action/load/movielist", {playlist: list}, function(data) {
     console.log(data);
   });
 };
@@ -142,6 +164,8 @@ $(function() {
   $(".action_image").on("click", loadImage);
   $(".action_music").on("click", loadMusic);
   $(".action_movie").on("click", loadMovie);
+  $(".action_music_repeat").on("click", loadMusicPlayList);
+  $(".action_movie_repeat").on("click", loadMoviePlayList);
   $(".action_button").on("click", onAction);
   $("#btn_pause").on("click", onPause);
   $("#btn_play").on("click", onPlay);

@@ -31,6 +31,20 @@ router.post('/action/loadmovie', function(req, res, next) {
   res.json({result: 'ok'});
 });
 
+router.post('/action/load/musiclist', function(req, res, next) {
+  var playlist =  req.body['playlist[]'];
+  console.log(playlist);
+  req.app.locals.io.emit('musicplaylist', {playlist: playlist});
+  res.json({result: 'ok'});
+});
+
+router.post('/action/load/movielist', function(req, res, next) {
+  var playlist =  req.body['playlist[]'];
+  console.log(playlist);
+  req.app.locals.io.emit('movieplaylist', {playlist: playlist});
+  res.json({result: 'ok'});
+});
+
 function shuffle(a) {
   var j, x, i;
   for (i = a.length; i; i--) {

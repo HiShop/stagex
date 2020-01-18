@@ -242,8 +242,8 @@ var loadImageFromUrl = function(url) {
   $('#layer_lot')[0].hidden = true;
   var vp = $('#vplayer')[0];
   vp.pause();
-  vp.src = ''; 
-  vp.load(); 
+  vp.src = '';
+  vp.load();
   vp.hidden = true;
   img.hidden = false;
 };
@@ -261,7 +261,7 @@ var loadImage = function(e) {
 var stopPlay = function() {
   vp = $('#vplayer').get(0);
   vp.pause();
-  vp.src = ''; 
+  vp.src = '';
   vp.load();
 
   ap = $('#aplayer').get(0);
@@ -270,14 +270,14 @@ var stopPlay = function() {
 
 var loadMovie = function(url) {
   stopPlay();
-  
+
   var img = $('#image')[0];
   img.hidden = true;
   $('#layer_lot')[0].hidden = true;
-  
+
   vp = $('#vplayer').get(0);
-  vp.src = url; 
-  vp.load(); 
+  vp.src = url;
+  vp.load();
   vp.hidden = false;
   vp.play();
   window.player = vp;
@@ -289,7 +289,7 @@ var loadMusic = function(url) {
   var ap = $('#aplayer')[0];
   ap.src = url;
   ap.play();
-  
+
   window.player = ap;
 };
 
@@ -346,7 +346,7 @@ var roll = function() {
 
   $('#roll_avatar')[0].src = "http://mserver/avatars/" + aud._id + ".jpg";
   $('#roll_nick').text(aud.name);
-  
+
   setTimeout(roll, window.LOT.speed);
 };
 
@@ -371,6 +371,23 @@ function preloadImages(cache, array, onload, callback) {
   }
 }
 
+var on_movie_ended = function(e) {
+  setTimeout(function() {
+    if (window.MOVIE_PLAY_LIST.length > 0) {
+      loadMovie(window.MOVIE_PLAY_LIST.pop())
+    } else {
+      loadImageFromUrl(window.BGIMG);
+    }
+  }, 1000);
+};
+
+var on_music_ended = function(e) {
+  setTimeout(function() {
+    if (window.MUSIC_PLAY_LIST.length > 0) {
+      loadMusic(window.MUSIC_PLAY_LIST.pop())
+    }
+  }, 1000);
+};
 
 var loadLottery = function(e) {
   stopPlay();
@@ -436,6 +453,9 @@ $(function() {
   wrapper.addEventListener("dblclick", function(e) {
     launchFullScreen(curtain);
   });
+
+  $("#vplayer").on("ended", on_movie_ended);
+  $("#aplayer").on("ended", on_music_ended);
 });
 
 var socket = io(); //开启流
@@ -464,11 +484,23 @@ socket.on('loadimg', function(e) {
 });
 
 socket.on('loadmusic', function(e) {
+  window.MUSIC_PLAY_LIST = [];
   loadMusic(e.url);
 });
 
 socket.on('loadmov', function(e) {
+  window.MOVIE_PLAY_LIST = [];
   loadMovie(e.url);
+});
+
+socket.on('musicplaylist', function(e) {
+  window.MUSIC_PLAY_LIST = e.playlist.reverse();
+  loadMusic(window.MUSIC_PLAY_LIST.pop())
+});
+
+socket.on('movieplaylist', function(e) {
+  window.MOVIE_PLAY_LIST = e.playlist.reverse();
+  loadMovie(window.MOVIE_PLAY_LIST.pop())
 });
 
 socket.on('startlot', function(e) {
@@ -505,5 +537,6 @@ socket.on('ctlstop', function(e) {
 });
 
 socket.on('ctlbg', function(e) {
+  window.BGIMG = e.url;
   loadImage(e);
 });
