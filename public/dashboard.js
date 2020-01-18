@@ -1,6 +1,16 @@
 window.currentImage = null;
 
+var highlightEle = function(ele) {
+  ele.css("animation", "fade 600ms");
+  ele.css("-webkit-animation", "fade 600ms");
+  setTimeout(function(){
+    ele.css("animation", "");
+    ele.css("-webkit-animation", "");
+  }, 700);
+};
+
 var loadImage = function() {
+  highlightEle($(this));
   var payload = {
     url: $(this).data().url,
     index: $(this).data().index,
@@ -15,6 +25,7 @@ var loadImage = function() {
 };
 
 var loadMusic = function() {
+  highlightEle($(this));
   var url = $(this).data().url;
   $.post("/admin/action/loadmusic", {url: url}, function(data) {
     console.log(data);
@@ -22,6 +33,7 @@ var loadMusic = function() {
 };
 
 var loadMovie = function() {
+  highlightEle($(this));
   var url = $(this).data().url;
   $.post("/admin/action/loadmovie", {url: url}, function(data) {
     console.log(data);
@@ -29,6 +41,7 @@ var loadMovie = function() {
 };
 
 var loadMusicPlayList = function() {
+  highlightEle($(this));
   var siblings = $(this).siblings();
   var list = [];
   for(var i = 0;i < siblings.length; i++) {
@@ -40,6 +53,7 @@ var loadMusicPlayList = function() {
 };
 
 var loadMoviePlayList = function() {
+  highlightEle($(this));
   var siblings = $(this).siblings();
   var list = [];
   for(var i = 0;i < siblings.length; i++) {
@@ -119,24 +133,28 @@ var onAction = function() {
 };
 
 var onPause = function() {
+  highlightEle($(this));
   $.post("/admin/action/ctlpause", function(data) {
     console.log(data);
   });
 };
 
 var onPlay = function() {
+  highlightEle($(this));
   $.post("/admin/action/ctlplay", function(data) {
     console.log(data);
   });
 };
 
 var onStop = function() {
+  highlightEle($(this));
   $.post("/admin/action/ctlstop", function(data) {
     console.log(data);
   });
 };
 
 var onBG = function() {
+  highlightEle($(this));
   var url = $(this).data().url;
   $.post("/admin/action/ctlbg", {url: url, index: 0, length: 1}, function(data) {
     console.log(data);

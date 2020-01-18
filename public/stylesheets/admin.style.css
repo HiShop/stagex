@@ -12,6 +12,30 @@ html * {
     box-sizing: border-box;
 }
 
+@keyframes fade {
+    from {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
+
 body {
     display: block;
     margin: 0;
@@ -274,7 +298,7 @@ div {
 }
 
 .control_bar ul li {
-    padding: 5px 8px;
+    padding: 10px 20px;
     cursor: pointer;
     margin-bottom: 15px;
     background-color: #1AAD19;
