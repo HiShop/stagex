@@ -142,18 +142,18 @@ div {
     padding: 7px;
     border: 1px solid #1AAD19;
     border-radius: 5px;
-    background-color: #efe;
 }
 
 .page_ev_title {
-    border-bottom: 1px dashed #1AAD19;
 }
 
 .page_ev_title h3 {
     font-size: 1.0em;
     line-height: 1.0em;
     margin: 0;
-    padding: 10px 0;
+    padding: 10px;
+    background-color: #cec;
+    border-radius: 5px;
 }
 
 .page_ev_desc p {
